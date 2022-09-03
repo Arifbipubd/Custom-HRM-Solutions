@@ -5914,9 +5914,7 @@ button {
 .nav-tabs-custom .nav-item {
   position: relative;
 }
-.nav-tabs-custom .nav-item:hover{
-  background-color: var(--vz-vertical-menu-item-hover-bg);
-}
+
 .nav-tabs-custom .nav-item .nav-link {
   border: none;
   font-weight: 500;
