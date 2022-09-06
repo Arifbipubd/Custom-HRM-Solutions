@@ -41,10 +41,10 @@
   --vz-body-color-rgb: 33, 37, 41;
   --vz-vertical-menu-bg: #fff;
   --vz-vertical-menu-item-color: #6d7080;
-  --vz-vertical-menu-item-hover-color: #7267EF;
-  --vz-vertical-menu-item-hover-bg:#7267EF;
-  --vz-vertical-menu-item-active-color: #7267EF;
-  --vz-vertical-menu-item-active-bg: #7267EF;
+  --vz-vertical-menu-item-hover-color: #7267ef;
+  --vz-vertical-menu-item-hover-bg: #7267ef;
+  --vz-vertical-menu-item-active-color: #7267ef;
+  --vz-vertical-menu-item-active-bg: #7267ef;
   --vz-vertical-menu-sub-item-color: #7c7f90;
   --vz-vertical-menu-sub-item-hover-color: #405189;
   --vz-vertical-menu-sub-item-active-color: #405189;
@@ -247,6 +247,11 @@
     width: 36px;
   }
 }
+.navbar-menu .navbar-nav .nav-item:hover > a.menu-link {
+  background-color: var( --vz-body-bg);
+  color: var(--vz-vertical-menu-item-hover-color);
+}
+
 .navbar-header .user-name-text {
   color: var(--vz-gray-700);
 }
@@ -645,10 +650,8 @@
   font-weight: 600;
 }
 .navbar-menu .navbar-nav .nav-link.active {
-  color: var(--vz-vertical-menu-item-active-color);
-}
-.navbar-menu .navbar-nav .nav-link:hover {
   color: var(--vz-vertical-menu-item-hover-color);
+  background-color: var(--vz-body-bg);
 }
 .navbar-menu .navbar-nav .nav-link i {
   display: inline-block;
