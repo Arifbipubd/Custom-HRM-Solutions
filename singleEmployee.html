@@ -867,740 +867,410 @@
         <div class="page-content">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-4">
                 <div class="card">
-                  <div class="card-header">
-                    <h4 class="card-title mb-0">All Employee</h4>
+                  <div class="cardHeader p-4">
+                    <div class="d-flex align-items-center px-4 my-4">
+                      <div class="cardHeaderImg">
+                        <img src="assets/images/users/avatar-2.jpg" alt="" />
+                      </div>
+                      <div class="cardHeaderContent mx-3">
+                        <div>
+                          <span class="fw-bold">Arif Bipu</span>
+                        </div>
+                        <div>
+                          <span>Software Engineer</span>
+                        </div>
+                      </div>
+                      <div class="singleEmployeeTag">
+                        <span class="badge badge-soft-success text-uppercase"
+                          >Candidate</span
+                        >
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                      <div>
+                        <span> <i class="las la-user"></i> Manager</span>
+                      </div>
+                      <div>
+                        <span>Jhon Due</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between my-2">
+                      <div>
+                        <span class="">
+                          <i class="las la-phone"></i> Phone</span
+                        >
+                      </div>
+                      <div>
+                        <span>01758871249</span>
+                      </div>
+                    </div>
                   </div>
-                  <!-- end card header -->
-
-                  <div class="card-body">
-                    <div id="customerList">
-                      <div class="row g-4 mb-3">
-                        <div class="col-sm-auto">
-                          <div class="">
-                            <div class="search-box ms-2">
-                              <input
-                                type="text"
-                                class="form-control search"
-                                placeholder="Search..."
-                              />
-                              <i class="ri-search-line search-icon"></i>
+                  <div class="singleEmployeeCardSideTab">
+                    <ul
+                      class="nav nav-pills flex-column"
+                      id="pills-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-contact-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-contact"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-contact"
+                          aria-selected="true"
+                        >
+                          <span> <i class="las la-user"></i> Contact</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-personalInf-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-personalInf"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-personalInf"
+                          aria-selected="false"
+                        >
+                          <span>
+                            <i class="las la-user"></i> Personal
+                            Information</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-FinanceInf-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-FinanceInf"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-FinanceInf"
+                          aria-selected="false"
+                        >
+                          <span>
+                            <i class="las la-user"></i> Finance
+                            Information</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-Qualification-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-Qualification"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-Qualification"
+                          aria-selected="true"
+                        >
+                          <span> <i class="las la-user"></i> Qualification</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-Employeement-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-Employeement"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-Employeement"
+                          aria-selected="true"
+                        >
+                          <span> <i class="las la-user"></i> Employeement</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-AccountInf-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-AccountInf"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-AccountInf"
+                          aria-selected="true"
+                        >
+                          <span>
+                            <i class="las la-user"></i> Account
+                            Information</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link w-100 d-flex justify-content-between align-items-center px-4 py-3"
+                          id="pills-Document-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-Document"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-Document"
+                          aria-selected="true"
+                        >
+                          <span> <i class="las la-user"></i> Documents</span
+                          ><i class="las la-angle-right float-end"></i>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="card">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-contact"
+                      role="tabpanel"
+                      aria-labelledby="pills-contact-tab"
+                    >
+                      <ul
+                        class="nav nav-tabs nav-border-top nav-border-top-primary mb-3"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#nav-border-top-home"
+                            role="tab"
+                            aria-selected="false"
+                          >
+                            Home
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#nav-border-top-profile"
+                            role="tab"
+                            aria-selected="false"
+                          >
+                            Profile
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-bs-toggle="tab"
+                            href="#nav-border-top-messages"
+                            role="tab"
+                            aria-selected="false"
+                          >
+                            Messages
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            data-bs-toggle="tab"
+                            href="#nav-border-top-settings"
+                            role="tab"
+                            aria-selected="true"
+                          >
+                            Settings
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="tab-content text-muted">
+                        <div
+                          class="tab-pane active"
+                          id="nav-border-top-home"
+                          role="tabpanel"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0">
+                              <i
+                                class="ri-checkbox-circle-line text-success"
+                              ></i>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              Trust fund seitan letterpress, keytar raw denim
+                              keffiyeh etsy art party before they sold out
+                              master cleanse gluten-free squid scenester freegan
+                              cosby sweater. Fanny pack portland seitan DIY, art
+                              party locavore wolf cliche high life echo park
+                              Austin. Cred vinyl keffiyeh DIY salvia PBR.
+                              <div class="mt-2">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="btn btn-link"
+                                  >Read More
+                                  <i
+                                    class="ri-arrow-right-line ms-1 align-middle"
+                                  ></i
+                                ></a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm">
-                          <div class="d-flex justify-content-sm-end">
-                            <button
-                              type="button"
-                              class="btn btn-success add-btn"
-                              data-bs-toggle="modal"
-                              id="create-btn"
-                              data-bs-target="#showModal"
-                            >
-                              <i class="ri-add-line align-bottom me-1"></i> Add
-                              Employee
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="table-responsive table-card mt-3 mb-1">
-                        <table
-                          class="table align-middle table-nowrap"
-                          id="customerTable"
+                        <div
+                          class="tab-pane"
+                          id="nav-border-top-profile"
+                          role="tabpanel"
                         >
-                          <thead class="table-light">
-                            <tr>
-                              <th class="sort" data-sort="customer_name">
-                                Name
-                              </th>
-                              <th class="sort" data-sort="organizations">
-                                Organizations
-                              </th>
-                              <th class="sort" data-sort="designations">
-                                Designations
-                              </th>
-                              <th class="sort" data-sort="phone">
-                                Contact Number
-                              </th>
-                              <th class="sort" data-sort="status">Status</th>
-                              <th class="sort" data-sort="action">Action</th>
-                            </tr>
-                          </thead>
-                          <tbody class="list form-check-all">
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button
-                                      class="btn btn-sm btn-danger"
-                                      onclick="location.href='singleEmployee.html'"
-                                    >
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-success text-uppercase"
-                                  >Employee</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-danger text-uppercase"
-                                  >Terminate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="customer_name">
-                                <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
-                                    <img
-                                      src="assets/images/users/avatar-3.jpg"
-                                      alt=""
-                                      class="avatar-xs rounded-circle"
-                                    />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
-                                </div>
-                              </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
-                                <span
-                                  class="badge badge-soft-warning text-uppercase"
-                                  >Candidate</span
-                                >
-                              </td>
-                              <td>
-                                <div class="d-flex gap-2">
-                                  <div class="edit">
-                                    <button
-                                      class="btn btn-sm btn-success edit-item-btn"
-                                      data-bs-toggle="modal"
-                                      data-bs-target="#showModal"
-                                    >
-                                      Edit
-                                    </button>
-                                  </div>
-                                  <div class="view">
-                                    <button class="btn btn-sm btn-danger">
-                                      view
-                                    </button>
-                                  </div>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <div class="noresult" style="display: none">
-                          <div class="text-center">
-                            <lord-icon
-                              src="https://cdn.lordicon.com/msoeawqm.json"
-                              trigger="loop"
-                              colors="primary:#121331,secondary:#08a88a"
-                              style="width: 75px; height: 75px"
-                            >
-                            </lord-icon>
-                            <h5 class="mt-2">Sorry! No Result Found</h5>
-                            <p class="text-muted mb-0">
-                              We've searched more than 150+ Orders We did not
-                              find any orders for you search.
-                            </p>
+                          <div class="d-flex">
+                            <div class="flex-shrink-0">
+                              <i
+                                class="ri-checkbox-circle-line text-success"
+                              ></i>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              When, while the lovely valley teems with vapour
+                              around me, and the meridian sun strikes the upper
+                              surface of the impenetrable foliage of my trees,
+                              and but a few stray gleams steal into the inner
+                              sanctuary, I throw myself down among the tall
+                              grass by the trickling stream; and, as I lie close
+                              to the earth, a thousand unknown.
+                              <div class="mt-2">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="btn btn-link"
+                                  >Read More
+                                  <i
+                                    class="ri-arrow-right-line ms-1 align-middle"
+                                  ></i
+                                ></a>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-
-                      <div class="d-flex justify-content-end">
-                        <div class="pagination-wrap hstack gap-2">
-                          <a
-                            class="page-item pagination-prev disabled"
-                            href="#"
-                          >
-                            Previous
-                          </a>
-                          <ul class="pagination listjs-pagination mb-0"></ul>
-                          <a class="page-item pagination-next" href="#">
-                            Next
-                          </a>
+                        <div
+                          class="tab-pane"
+                          id="nav-border-top-messages"
+                          role="tabpanel"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0">
+                              <i
+                                class="ri-checkbox-circle-line text-success"
+                              ></i>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              Etsy mixtape wayfarers, ethical wes anderson tofu
+                              before they sold out mcsweeney's organic lomo
+                              retro fanny pack lo-fi farm-to-table readymade.
+                              Messenger bag gentrify pitchfork tattooed craft
+                              beer, iphone skateboard locavore carles etsy
+                              salvia banksy hoodie helvetica. DIY synth PBR
+                              banksy irony.
+                              <div class="mt-2">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="btn btn-link"
+                                  >Read More
+                                  <i
+                                    class="ri-arrow-right-line ms-1 align-middle"
+                                  ></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane"
+                          id="nav-border-top-settings"
+                          role="tabpanel"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0">
+                              <i
+                                class="ri-checkbox-circle-line text-success"
+                              ></i>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                              when darkness overspreads my eyes, and heaven and
+                              earth seem to dwell in my soul and absorb its
+                              power, like the form of a beloved mistress, then I
+                              often think with longing, Oh, would I could
+                              describe these conceptions, could impress upon
+                              paper all that is living so full and warm within
+                              me, that it might be the.
+                              <div class="mt-2">
+                                <a
+                                  href="javascript:void(0);"
+                                  class="btn btn-link"
+                                  >Read More
+                                  <i
+                                    class="ri-arrow-right-line ms-1 align-middle"
+                                  ></i
+                                ></a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-personalInf"
+                      role="tabpanel"
+                      aria-labelledby="pills-personalInf-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-FinanceInf"
+                      role="tabpanel"
+                      aria-labelledby="pills-FinanceInf-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-Qualification"
+                      role="tabpanel"
+                      aria-labelledby="pills-Qualification-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-Employeement"
+                      role="tabpanel"
+                      aria-labelledby="pills-Employeement-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-AccountInf"
+                      role="tabpanel"
+                      aria-labelledby="pills-AccountInf-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="pills-Document"
+                      role="tabpanel"
+                      aria-labelledby="pills-Document-tab"
+                    >
+                      ...
+                    </div>
                   </div>
-                  <!-- end card -->
                 </div>
-                <!-- end col -->
               </div>
-              <!-- end col -->
             </div>
-            <!-- Edit Modal -->
-            <!-- <div
-              class="modal fade"
-              id="showModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header bg-light p-3">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                      id="close-modal"
-                    ></button>
-                  </div>
-                  <form>
-                    <div class="modal-body">
-                      <div class="mb-3" id="modal-id" style="display: none">
-                        <label for="id-field" class="form-label">ID</label>
-                        <input
-                          type="text"
-                          id="id-field"
-                          class="form-control"
-                          placeholder="ID"
-                          readonly
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="customername-field" class="form-label"
-                          >Customer Name</label
-                        >
-                        <input
-                          type="text"
-                          id="customername-field"
-                          class="form-control"
-                          placeholder="Enter Name"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="email-field" class="form-label"
-                          >Email</label
-                        >
-                        <input
-                          type="email"
-                          id="email-field"
-                          class="form-control"
-                          placeholder="Enter Email"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="phone-field" class="form-label"
-                          >Phone</label
-                        >
-                        <input
-                          type="text"
-                          id="phone-field"
-                          class="form-control"
-                          placeholder="Enter Phone no."
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="date-field" class="form-label"
-                          >Joining Date</label
-                        >
-                        <input
-                          type="text"
-                          id="date-field"
-                          class="form-control"
-                          placeholder="Select Date"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <label for="status-field" class="form-label"
-                          >Status</label
-                        >
-                        <select
-                          class="form-control"
-                          data-trigger
-                          name="status-field"
-                          id="status-field"
-                        >
-                          <option value="">Status</option>
-                          <option value="Active">Active</option>
-                          <option value="Block">Block</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <div class="hstack gap-2 justify-content-end">
-                        <button
-                          type="button"
-                          class="btn btn-light"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button
-                          type="submit"
-                          class="btn btn-success"
-                          id="add-btn"
-                        >
-                          Add Customer
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-success"
-                          id="edit-btn"
-                        >
-                          Update
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div> -->
-            <!--end modal -->
           </div>
           <!-- container-fluid -->
         </div>
-        <!-- End Page-content -->
 
         <footer class="footer">
           <div class="container-fluid">

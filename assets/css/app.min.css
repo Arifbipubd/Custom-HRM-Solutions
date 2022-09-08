@@ -248,7 +248,7 @@
   }
 }
 .navbar-menu .navbar-nav .nav-item:hover > a.menu-link {
-  background-color: var( --vz-body-bg);
+  background-color: var(--vz-body-bg);
   color: var(--vz-vertical-menu-item-hover-color);
 }
 
@@ -625,7 +625,6 @@
   width: 250px;
   z-index: 1002;
   background: var(--vz-vertical-menu-bg);
-  border-right: 1px solid #fff;
   bottom: 0;
   margin-top: 0;
   position: fixed;
@@ -645,7 +644,7 @@
   align-items: center;
   padding: 0.625rem 1.5rem;
   color: var(--vz-vertical-menu-item-color);
-  font-size: 18px;
+  font-size: 15px;
   font-family: hkgrotesk, sans-serif;
   font-weight: 600;
 }
@@ -656,7 +655,7 @@
 .navbar-menu .navbar-nav .nav-link i {
   display: inline-block;
   min-width: 1.75rem;
-  font-size: 18px;
+  font-size: 15px;
   line-height: inherit;
 }
 .navbar-menu .navbar-nav .nav-link svg {
@@ -14341,3 +14340,40 @@ span.flatpickr-weekday {
   background-color: var(--vz-card-bg) !important;
 }
 /*# sourceMappingURL=app.min.css.map */
+
+/************************  Custom CSS Add By Bipu  *************************/
+
+/******************* Single Employee ***************************/
+
+.cardHeader {
+  position: relative;
+}
+.singleEmployeeTag {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+
+.cardHeaderImg {
+  height: 100px;
+  width: 100px;
+}
+.cardHeaderImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.cardHeader span {
+  font-size: 14px;
+}
+.singleEmployeeCardSideTab li {
+  font-size: 14px;
+}
+
+.singleEmployeeCardSideTab .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--vz-body-bg) !important;
+  color: var(--vz-vertical-menu-item-hover-color);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
