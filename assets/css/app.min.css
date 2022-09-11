@@ -14350,8 +14350,11 @@ span.flatpickr-weekday {
 }
 .singleEmployeeTag {
   position: absolute;
-  top: 7%;
-  right: 5%;
+  top: 4%;
+  right: 2%;
+}
+.singleEmployeeTag span{
+  font-size: 12px !important;
 }
 
 .cardHeaderImg {
