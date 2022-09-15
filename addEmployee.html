@@ -949,8 +949,8 @@
                           <label for="RoleinputState" class="form-label"
                             >Role</label
                           >
-                          <select id="RoleinputState" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="RoleinputState" placeholder="Choose Role" >
+                            <option value="">
                               Choose Role
                             </option>
                             <option>Employee</option>
@@ -961,13 +961,14 @@
                       <!--end col-->
                       <div class="col-4">
                         <div class="mb-3">
-                          <label for="StatusinputState" class="form-label"
+                          <label for="" class="form-label"
                             >Status</label
                           >
-                          <select id="StatusinputState" class="form-select">
-                            <option selected hidden disabled>
-                              Choose status
-                            </option>
+                          <select
+                            id=""
+                            placeholder="Choose Status"
+                          >
+                            <option value="">Select a state...</option>
                             <option>Active</option>
                             <option>inActive</option>
                           </select>
@@ -979,8 +980,8 @@
                           <label for="joinedInput" class="form-label"
                             >AlreadyJoined</label
                           >
-                          <select id="joinedInput" class="form-select">
-                            <option selected hidden disabled>Choose...</option>
+                          <select id="joinedInput" placeholder="Choose ..." >
+                            <option value="">Choose...</option>
                             <option>Yes</option>
                             <option>No</option>
                           </select>
@@ -1001,6 +1002,7 @@
                         </div>
                       </div>
                       <!--end col-->
+                      <hr class="mt-4" />
                       <div class="col-12 my-3">
                         <h3>Onboarding</h3>
                       </div>
@@ -1010,8 +1012,8 @@
                           <label for="organizationInput" class="form-label"
                             >Organizations</label
                           >
-                          <select id="organizationInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="organizationInput" placeholder="Choose Organizations">
+                            <option value="">
                               Choose organizations
                             </option>
                             <option>Evocation It</option>
@@ -1025,8 +1027,8 @@
                           <label for="departmentInput" class="form-label"
                             >Department</label
                           >
-                          <select id="departmentInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="departmentInput" placeholder="Choose Department">
+                            <option value="">
                               Choose Department
                             </option>
                             <option>Software</option>
@@ -1040,8 +1042,8 @@
                           <label for="designationInput" class="form-label"
                             >Designation</label
                           >
-                          <select id="designationInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="designationInput" placeholder="Choose Department">
+                            <option  value="">
                               Choose Designation
                             </option>
                             <option>Front end</option>
@@ -1083,8 +1085,8 @@
                           <label for="functionInput" class="form-label"
                             >Function</label
                           >
-                          <select id="functionInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="functionInput" placeholder="Choose Function">
+                            <option value="">
                               Choose Function
                             </option>
                             <option>Software</option>
@@ -1114,9 +1116,9 @@
                           >
                           <select
                             id="employeementTypeInput"
-                            class="form-select"
+                            placeholder="Choose Employeement"
                           >
-                            <option selected hidden disabled>
+                            <option value="">
                               Choose Employee type
                             </option>
                             <option>Front End</option>
@@ -1199,6 +1201,7 @@
                         </div>
                       </div>
                       <!--end col-->
+                      <hr class="mt-4" />
                       <div class="col-12 my-3">
                         <h3>Reporting</h3>
                       </div>
@@ -1225,8 +1228,8 @@
                           <label for="SupervisorInput" class="form-label"
                             >Supervisor</label
                           >
-                          <select id="SupervisorInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="SupervisorInput" placeholder="Choose Supervisor">
+                            <option value="">
                               Choose Supervisor
                             </option>
                             <option>Arif</option>
@@ -1240,8 +1243,8 @@
                           <label for="granSupervisorInput" class="form-label"
                             >Grand-supervisor</label
                           >
-                          <select id="granSupervisorInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="granSupervisorInput" placeholder="Choose ...">
+                            <option value="">
                               Choose Grand Supervisor
                             </option>
                             <option>Arif</option>
@@ -1255,8 +1258,8 @@
                           <label for="hrPartnerInput" class="form-label"
                             >Hr-partner</label
                           >
-                          <select id="hrPartnerInput" class="form-select">
-                            <option selected hidden disabled>
+                          <select id="hrPartnerInput" placeholder="Choose Hr-partner">
+                            <option value="">
                               Choose Hr Partner
                             </option>
                             <option>Eviocation It</option>
@@ -1296,7 +1299,11 @@
                           <div class="col-6">
                             <div class="d-flex justify-content-center">
                               <div class="mx-2">
-                                <button type="button" class="btn btn-danger" onclick="location.href='allEmployee.html'">
+                                <button
+                                  type="button"
+                                  class="btn btn-danger"
+                                  onclick="location.href='allEmployee.html'"
+                                >
                                   Cancel
                                 </button>
                               </div>
@@ -1313,6 +1320,65 @@
                     </div>
                     <!--end row-->
                   </form>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card p-4">
+                  <div class="text-center mb-3">
+                    <h2>Instruction Panel</h2>
+                  </div>
+                  <div>
+                    <ul class="intructionContent">
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                      <li class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloremque, eligendi!
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1367,5 +1433,27 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-----------------Serch Filter CDN-------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+    </script>
   </body>
 </html>
