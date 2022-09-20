@@ -824,7 +824,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#">
+                <a class="nav-link menu-link" href="coreHr.html">
                   <i class="las la-sitemap"></i>
                   <span data-key="t-dashboards">Core HR</span>
                 </a>
@@ -866,306 +866,230 @@
       <div class="main-content">
         <div class="page-content">
           <div class="container-fluid">
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <div class="card p-4">
-                  <div class="text-center my-3">
-                    <h2>Add Employee</h2>
+            <div class="row mb-5">
+              <div class="col-3">
+                <div
+                  class="coreHrMenu d-flex align-items-center hrMenuactive"
+                  onclick="location.href='organization.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
                   </div>
+                  <div class="coreHrMenuText">
+                    <p>Organisation</p>
+                    <small>Set up organizations</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div
+                  class="coreHrMenu d-flex align-items-center"
+                  onclick="location.href='designation.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
+                  </div>
+                  <div class="coreHrMenuText">
+                    <p>Designation</p>
+                    <small>Set up Designation</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div
+                  class="coreHrMenu d-flex align-items-center"
+                  onclick="location.href='department.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
+                  </div>
+                  <div class="coreHrMenuText">
+                    <p>Department</p>
+                    <small>Set up Department</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div
+                  class="coreHrMenu d-flex align-items-center"
+                  onclick="location.href='function.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
+                  </div>
+                  <div class="coreHrMenuText">
+                    <p>Function</p>
+                    <small>Set up Function</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card p-3">
                   <form action="">
-                    <div class="row">
-                      <div class="col-12 mb-3">
-                        <h3>User Information</h3>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="Nameinput" class="form-label">Name</label>
-                          <div class="input-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Enter your name"
-                              id="firstNameinput"
-                            />
-                            <div class="input-group-text">
-                              <a
-                                type="button"
-                                class=""
-                                data-bs-toggle="tooltip"
-                                rel="tooltip"
-                                data-bs-placement="top"
-                                title="Tooltip"
-                              >
-                                ?
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email</label>
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Enter email address"
-                            id="email"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="phonenumberInput" class="form-label"
-                            >Phone Number</label
-                          >
-                          <input
-                            type="tel"
-                            class="form-control"
-                            placeholder="+88 01xxxxxxxxx"
-                            id="phonenumberInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="" class="form-label">Status</label>
-                          <select id="" placeholder="Choose Status">
-                            <option value="">Select a state...</option>
-                            <option>Active</option>
-                            <option>inActive</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="imageInput" class="form-label"
-                            >Image</label
-                          >
-                          <input
-                            type="file"
-                            class="form-control"
-                            placeholder="Enter your city"
-                            id="imageInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <hr class="mt-4" />
-                      <div class="col-12 my-3">
-                        <h3>Onboarding</h3>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="organizationInput" class="form-label"
-                            >Organizations</label
-                          >
-                          <select
-                            id="organizationInput"
-                            placeholder="Choose Organizations"
-                          >
-                            <option value="">Choose organizations</option>
-                            <option>Evocation It</option>
-                            <option>Invicta</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="designationInput" class="form-label"
-                            >Designation</label
-                          >
-                          <select
-                            id="designationInput"
-                            placeholder="Choose Department"
-                          >
-                            <option value="">Choose Designation</option>
-                            <option>Front end</option>
-                            <option>Back end</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="employeeidInput" class="form-label"
-                            >Employee Id</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Employee Id"
-                            id="employeeidInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="jobGradeInput" class="form-label"
-                            >Job Grade</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Job Grade"
-                            id="jobGradeInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="functionInput" class="form-label"
-                            >Function</label
-                          >
-                          <select
-                            id="functionInput"
-                            placeholder="Choose Function"
-                          >
-                            <option value="">Choose Function</option>
-                            <option>Software</option>
-                            <option>It</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="jobLocationInput" class="form-label"
-                            >Job Location</label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter Job Location"
-                            id="jobLocationInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="employeementTypeInput" class="form-label"
-                            >Employeement Type</label
-                          >
-                          <select
-                            id="employeementTypeInput"
-                            placeholder="Choose Employeement"
-                          >
-                            <option value="">Choose Employee type</option>
-                            <option>Front End</option>
-                            <option>Back End</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="">
-                          <label class="" for="groosSalary">Gross Salary</label>
-                          <div class="input-group">
-                            <div class="input-group-text">BDT</div>
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="groosSalary"
-                              placeholder="Gross Salary"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="">
-                          <label class="" for="ProbationInput"
-                            >Probation Period</label
-                          >
-                          <div class="input-group">
-                            <input
-                              type="number"
-                              class="form-control"
-                              id="ProbationInput"
-                              placeholder="Probation Period"
-                            />
-                            <div class="input-group-text">Month</div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="probationEndInput" class="form-label"
-                            >Probation End</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="probationEndInput"
-                            id="probationEndInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="startDateInput" class="form-label"
-                            >Start Date</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="Start Date"
-                            id="startDateInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-4">
-                        <div class="mb-3">
-                          <label for="endDateInput" class="form-label"
-                            >End Date</label
-                          >
-                          <input
-                            type="date"
-                            class="form-control"
-                            placeholder="End Date"
-                            id="endDateInput"
-                          />
-                        </div>
-                      </div>
-                      <!--end col-->
-                      <div class="col-lg-12 my-4">
-                        <div class="row justify-content-center">
-                          <div class="col-6">
-                            <div class="d-flex justify-content-center">
-                              <div class="mx-2">
-                                <button
-                                  type="button"
-                                  class="btn btn-danger px-5"
-                                  onclick="location.href='allEmployee.html'"
-                                >
-                                  Cancel
-                                </button>
-                              </div>
-                              <div class="mx-2">
-                                <button type="submit" class="btn btn-primary px-5">
-                                  Submit
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!--end col-->
+                    <div class="mb-3">
+                      <label class="form-label">Organisation Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter emploree name"
+                      />
                     </div>
-                    <!--end row-->
+                    <div class="mb-3">
+                      <label class="form-label">Organisation Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter emploree name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label"> Date</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="VertimeassageInput" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="VertimeassageInput"
+                        rows="3"
+                        placeholder="Enter your message"
+                      ></textarea>
+                    </div>
+                    <div class="text-end">
+                      <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
                   </form>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card p-3">
+                  <table class="table caption-top table-nowrap">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Text</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Annette Black</td>
+                        <td>10, Nov 2021</td>
+                        <td>Industrial Designer</td>
+                        <td>
+                          <div class="dropdown float-end">
+                            <a
+                              href="#"
+                              role="button"
+                              id="dropdownMenuLink"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="ri-more-2-fill"></i>
+                            </a>
+
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuLink"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">View</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Edit</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Delete</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Annette Black</td>
+                        <td>10, Nov 2021</td>
+                        <td>Industrial Designer</td>
+                        <td>
+                          <div class="dropdown float-end">
+                            <a
+                              href="#"
+                              role="button"
+                              id="dropdownMenuLink"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="ri-more-2-fill"></i>
+                            </a>
+
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuLink"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">View</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Edit</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Delete</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Annette Black</td>
+                        <td>10, Nov 2021</td>
+                        <td>Industrial Designer</td>
+                        <td>
+                          <div class="dropdown float-end">
+                            <a
+                              href="#"
+                              role="button"
+                              id="dropdownMenuLink"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="ri-more-2-fill"></i>
+                            </a>
+
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuLink"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">View</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Edit</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Delete</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -1221,30 +1145,7 @@
     <!-- App js -->
     <script src="assets/js/app.js"></script>
 
-    <!-----------------Serch Filter CDN-------->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
-      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
-      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
-      crossorigin="anonymous"
-    />
-    <script>
-      $(document).ready(function () {
-        $("select").selectize({
-          sortField: "text",
-        });
-      });
-
-      $(function () {
-        $("[rel='tooltip']").tooltip();
-      });
-    </script>
+    <!---------------Jquery-------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

@@ -14353,7 +14353,7 @@ span.flatpickr-weekday {
   top: 4%;
   right: 2%;
 }
-.singleEmployeeTag span{
+.singleEmployeeTag span {
   font-size: 12px !important;
 }
 
@@ -14381,9 +14381,41 @@ span.flatpickr-weekday {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.referenceContent{
+.referenceContent {
   font-size: 14px;
 }
-.intructionContent li{
+.intructionContent li {
   font-size: 14px;
+}
+
+/************Core Hr***************/
+.coreHrMenu {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.coreHrMenu:hover :where( .coreHrMenuIcon, .coreHrMenuText p  ) {
+  color: var(--vz-vertical-menu-item-hover-color);
+  transition: 0.2s ease-in-out;
+}
+.coreHrMenuIcon {
+  height: 50px;
+  width: 50px;
+}
+.hrMenuactive .coreHrMenuIcon {
+  border: 1px solid var(--vz-vertical-menu-item-hover-color);
+  border-radius: 50%;
+}
+.hrMenuactive .coreHrMenuIcon i {
+  color: var(--vz-vertical-menu-item-hover-color);
+}
+.hrMenuactive .coreHrMenuText p {
+  color: var(--vz-vertical-menu-item-hover-color);
+}
+.coreHrMenuIcon i {
+  font-size: x-large;
+}
+.coreHrMenuText p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
