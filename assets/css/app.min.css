@@ -14393,7 +14393,7 @@ span.flatpickr-weekday {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-.coreHrMenu:hover :where( .coreHrMenuIcon, .coreHrMenuText p  ) {
+.coreHrMenu:hover :where(.coreHrMenuIcon, .coreHrMenuText p) {
   color: var(--vz-vertical-menu-item-hover-color);
   transition: 0.2s ease-in-out;
 }
@@ -14418,4 +14418,7 @@ span.flatpickr-weekday {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+}
+.tooltip-icon {
+  font-size: 18px;
 }
