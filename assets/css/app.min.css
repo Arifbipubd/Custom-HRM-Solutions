@@ -14422,3 +14422,13 @@ span.flatpickr-weekday {
 .tooltip-icon {
   font-size: 18px;
 }
+
+/****************Organizations*************/
+
+#contentDiv{
+  display: none;
+  -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
