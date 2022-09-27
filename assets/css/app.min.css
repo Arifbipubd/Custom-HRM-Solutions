@@ -14388,6 +14388,11 @@ span.flatpickr-weekday {
   font-size: 14px;
 }
 
+/*********************Add Employee***************/
+#salaryPackage, #probationPeriod, #probationEnd, #startDate, #endDate{
+  display: none;
+}
+
 /************Core Hr***************/
 .coreHrMenu {
   cursor: pointer;
