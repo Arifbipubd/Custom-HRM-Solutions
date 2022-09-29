@@ -838,36 +838,22 @@
                 <div class="collapse menu-dropdown" id="coreHrDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="organization.html"
-                        class="nav-link"
-                      >
-                       Organisation
+                      <a href="organization.html" class="nav-link">
+                        Organisation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="designation.html"
-                        class="nav-link"
-                      >
+                      <a href="designation.html" class="nav-link">
                         Designation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="department.html"
-                        class="nav-link"
-                      >
+                      <a href="department.html" class="nav-link">
                         Department
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="function.html"
-                        class="nav-link"
-                      >
-                        Function
-                      </a>
+                      <a href="function.html" class="nav-link"> Function </a>
                     </li>
                   </ul>
                 </div>
@@ -879,36 +865,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#policyDropdown" data-bs-toggle="collapse"
+                <a
+                  class="nav-link menu-link"
+                  href="#policyDropdown"
+                  data-bs-toggle="collapse"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="coreHrDropdown">
+                  aria-controls="coreHrDropdown"
+                >
                   <i class="las la-receipt"></i>
                   <span data-key="t-dashboards">Policy</span>
                 </a>
-                  <div class="collapse menu-dropdown" id="policyDropdown">
+                <div class="collapse menu-dropdown" id="policyDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="systemPolicy.html"
-                        class="nav-link"
-                      >
-                       System Policy
+                      <a href="systemPolicy.html" class="nav-link">
+                        System Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="organizationPolicy.html"
-                        class="nav-link"
-                      >
+                      <a href="organizationPolicy.html" class="nav-link">
                         organization Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="announcement.html"
-                        class="nav-link"
-                      >
+                      <a href="announcement.html" class="nav-link">
                         Announcement
                       </a>
                     </li>
@@ -1002,22 +983,22 @@
                           </thead>
                           <tbody class="list form-check-all">
                             <tr>
-                              <td class="customer_name">
+                              <td class="searchfield1">
                                 <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
+                                  <!-- <div class="flex-shrink-0">
                                     <img
                                       src="assets/images/users/avatar-3.jpg"
                                       alt=""
                                       class="avatar-xs rounded-circle"
                                     />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
+                                  </div> -->
+                                  <div class="flex-grow-1">Arif Bipu</div>
                                 </div>
                               </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
+                              <td class="searchfield2">Evocation it</td>
+                              <td class="searchfield3">Software Engineer</td>
+                              <td class="searchfield4">01887980841</td>
+                              <td class="searchfield5">
                                 <span
                                   class="badge badge-soft-warning text-uppercase"
                                   >Candidate</span
@@ -1046,25 +1027,25 @@
                               </td>
                             </tr>
                             <tr>
-                              <td class="customer_name">
+                              <td class="searchfield1">
                                 <div class="d-flex gap-2 align-items-center">
-                                  <div class="flex-shrink-0">
+                                  <!-- <div class="flex-shrink-0">
                                     <img
                                       src="assets/images/users/avatar-3.jpg"
                                       alt=""
                                       class="avatar-xs rounded-circle"
                                     />
-                                  </div>
-                                  <div class="flex-grow-1">Jordan Kennedy</div>
+                                  </div> -->
+                                  <div class="flex-grow-1">Arif Bipu</div>
                                 </div>
                               </td>
-                              <td class="organizations">Evocation it</td>
-                              <td class="designations">Software Engineer</td>
-                              <td class="phone">01887980841</td>
-                              <td class="status">
+                              <td class="searchfield2">Evocation it</td>
+                              <td class="searchfield3">Software Engineer</td>
+                              <td class="searchfield4">01887980841</td>
+                              <td class="searchfield5">
                                 <span
-                                  class="badge badge-soft-success text-uppercase"
-                                  >Employee</span
+                                  class="badge badge-soft-warning text-uppercase"
+                                  >Candidate</span
                                 >
                               </td>
                               <td>
@@ -1079,7 +1060,10 @@
                                     </button>
                                   </div>
                                   <div class="view">
-                                    <button class="btn btn-sm btn-danger">
+                                    <button
+                                      class="btn btn-sm btn-danger"
+                                      onclick="location.href='singleEmployee.html'"
+                                    >
                                       view
                                     </button>
                                   </div>
@@ -1538,137 +1522,6 @@
               </div>
               <!-- end col -->
             </div>
-            <!-- Edit Modal -->
-            <!-- <div
-              class="modal fade"
-              id="showModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header bg-light p-3">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                      id="close-modal"
-                    ></button>
-                  </div>
-                  <form>
-                    <div class="modal-body">
-                      <div class="mb-3" id="modal-id" style="display: none">
-                        <label for="id-field" class="form-label">ID</label>
-                        <input
-                          type="text"
-                          id="id-field"
-                          class="form-control"
-                          placeholder="ID"
-                          readonly
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="customername-field" class="form-label"
-                          >Customer Name</label
-                        >
-                        <input
-                          type="text"
-                          id="customername-field"
-                          class="form-control"
-                          placeholder="Enter Name"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="email-field" class="form-label"
-                          >Email</label
-                        >
-                        <input
-                          type="email"
-                          id="email-field"
-                          class="form-control"
-                          placeholder="Enter Email"
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="phone-field" class="form-label"
-                          >Phone</label
-                        >
-                        <input
-                          type="text"
-                          id="phone-field"
-                          class="form-control"
-                          placeholder="Enter Phone no."
-                          required
-                        />
-                      </div>
-
-                      <div class="mb-3">
-                        <label for="date-field" class="form-label"
-                          >Joining Date</label
-                        >
-                        <input
-                          type="text"
-                          id="date-field"
-                          class="form-control"
-                          placeholder="Select Date"
-                          required
-                        />
-                      </div>
-
-                      <div>
-                        <label for="status-field" class="form-label"
-                          >Status</label
-                        >
-                        <select
-                          class="form-control"
-                          data-trigger
-                          name="status-field"
-                          id="status-field"
-                        >
-                          <option value="">Status</option>
-                          <option value="Active">Active</option>
-                          <option value="Block">Block</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <div class="hstack gap-2 justify-content-end">
-                        <button
-                          type="button"
-                          class="btn btn-light"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button
-                          type="submit"
-                          class="btn btn-success"
-                          id="add-btn"
-                        >
-                          Add Customer
-                        </button>
-                        <button
-                          type="button"
-                          class="btn btn-success"
-                          id="edit-btn"
-                        >
-                          Update
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div> -->
-            <!--end modal -->
           </div>
           <!-- container-fluid -->
         </div>
