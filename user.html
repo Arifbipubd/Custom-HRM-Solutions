@@ -838,36 +838,22 @@
                 <div class="collapse menu-dropdown" id="coreHrDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="organization.html"
-                        class="nav-link"
-                      >
-                       Organisation
+                      <a href="organization.html" class="nav-link">
+                        Organisation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="designation.html"
-                        class="nav-link"
-                      >
+                      <a href="designation.html" class="nav-link">
                         Designation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="department.html"
-                        class="nav-link"
-                      >
+                      <a href="department.html" class="nav-link">
                         Department
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="function.html"
-                        class="nav-link"
-                      >
-                        Function
-                      </a>
+                      <a href="function.html" class="nav-link"> Function </a>
                     </li>
                   </ul>
                 </div>
@@ -879,36 +865,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#policyDropdown" data-bs-toggle="collapse"
+                <a
+                  class="nav-link menu-link"
+                  href="#policyDropdown"
+                  data-bs-toggle="collapse"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="coreHrDropdown">
+                  aria-controls="coreHrDropdown"
+                >
                   <i class="las la-receipt"></i>
                   <span data-key="t-dashboards">Policy</span>
                 </a>
-                  <div class="collapse menu-dropdown" id="policyDropdown">
+                <div class="collapse menu-dropdown" id="policyDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="systemPolicy.html"
-                        class="nav-link"
-                      >
-                       System Policy
+                      <a href="systemPolicy.html" class="nav-link">
+                        System Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="organizationPolicy.html"
-                        class="nav-link"
-                      >
+                      <a href="organizationPolicy.html" class="nav-link">
                         organization Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="announcement.html"
-                        class="nav-link"
-                      >
+                      <a href="announcement.html" class="nav-link">
                         Announcement
                       </a>
                     </li>
@@ -916,13 +897,13 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="user.html">
+                <a class="nav-link menu-link" href="#">
                   <i class="las la-scroll"></i>
                   <span data-key="t-dashboards">Expense</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#">
+                <a class="nav-link menu-link" href="user.html">
                   <i class="las la-user-tie"></i>
                   <span data-key="t-dashboards">User</span>
                 </a>
@@ -940,230 +921,271 @@
       <div class="main-content">
         <div class="page-content">
           <div class="container-fluid">
-            <div class="row mb-5">
-              <div class="col-3">
-                <div
-                  class="coreHrMenu d-flex align-items-center"
-                  onclick="location.href='organization.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Organisation</p>
-                    <small>Set up organizations</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div
-                  class="coreHrMenu d-flex align-items-center"
-                  onclick="location.href='designation.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Designation</p>
-                    <small>Set up Designation</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div
-                  class="coreHrMenu d-flex align-items-center hrMenuactive"
-                  onclick="location.href='department.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Department</p>
-                    <small>Set up Department</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div
-                  class="coreHrMenu d-flex align-items-center"
-                  onclick="location.href='function.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Function</p>
-                    <small>Set up Function</small>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="row">
-              <div class="col-6">
-                <div class="card p-3">
+              <div class="col-lg-4">
+                <div class="card p-4">
+                  <div class="mb-4">
+                    <h2>Add User</h2>
+                  </div>
                   <form action="">
-                    <div class="mb-3">
-                      <label class="form-label">Organisation Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter emploree name"
-                      />
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label class="form-label">Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label class="form-label">Email</label>
+                          <input
+                            type="email"
+                            placeholder="Enter Email"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label class="form-label">Phone</label>
+                          <input
+                            type="number"
+                            placeholder="Enter Phone Number"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label
+                            for=""
+                            class="form-label d-flex align-items-center"
+                            >Role
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Role"
+                              rel="tooltip"
+                            ></i
+                          ></label>
+                          <select id="" placeholder="Choose Status">
+                            <option value="">Select a state...</option>
+                            <option>admin staff</option>
+                            <option>external manager</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
-                    <div class="mb-3">
-                      <label class="form-label">Organisation Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Enter emploree name"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label"> Date</label>
-                      <input type="date" class="form-control" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="VertimeassageInput" class="form-label"
-                        >Message</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="VertimeassageInput"
-                        rows="3"
-                        placeholder="Enter your message"
-                      ></textarea>
-                    </div>
-                    <div class="text-end">
-                      <button type="submit" class="btn btn-primary">Add</button>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-center">
+                        <div>
+                          <button
+                            type="submit"
+                            class="btn btn-primary px-5 mx-1"
+                          >
+                            Add
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="card p-3">
-                  <table class="table caption-top table-nowrap">
-                    <thead class="table-light">
-                      <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Text</th>
-                        <th scope="col">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Annette Black</td>
-                        <td>10, Nov 2021</td>
-                        <td>Industrial Designer</td>
-                        <td>
-                          <div class="dropdown float-end">
-                            <a
-                              href="#"
-                              role="button"
-                              id="dropdownMenuLink"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="ri-more-2-fill"></i>
-                            </a>
-
-                            <ul
-                              class="dropdown-menu"
-                              aria-labelledby="dropdownMenuLink"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">View</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Delete</a>
-                              </li>
-                            </ul>
+              <div class="col-lg-8">
+                <div class="card p-4">
+                  <div id="customerList">
+                    <div class="col-sm-auto">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="search-box ms-2">
+                            <input
+                              type="text"
+                              class="form-control search"
+                              placeholder="Search..."
+                            />
+                            <i class="ri-search-line search-icon"></i>
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Annette Black</td>
-                        <td>10, Nov 2021</td>
-                        <td>Industrial Designer</td>
-                        <td>
-                          <div class="dropdown float-end">
-                            <a
-                              href="#"
-                              role="button"
-                              id="dropdownMenuLink"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="ri-more-2-fill"></i>
-                            </a>
+                        </div>
+                      </div>
+                    </div>
 
-                            <ul
-                              class="dropdown-menu"
-                              aria-labelledby="dropdownMenuLink"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">View</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Delete</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Annette Black</td>
-                        <td>10, Nov 2021</td>
-                        <td>Industrial Designer</td>
-                        <td>
-                          <div class="dropdown float-end">
-                            <a
-                              href="#"
-                              role="button"
-                              id="dropdownMenuLink"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="ri-more-2-fill"></i>
-                            </a>
+                    <div class="table-responsive table-card mt-3 mb-1 px-3">
+                      <table
+                        class="table align-middle table-nowrap"
+                        id="customerTable"
+                      >
+                        <thead class="table-light">
+                          <tr>
+                            <th class="sort" data-sort="name">
+                              Name
+                            </th>
+                            <th class="sort" data-sort="email">
+                              Email Address
+                            </th>
+                            <th class="sort" data-sort="role">Roleress</th>
+                            <th class="sort float-end" data-sort="action">
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="list form-check-all">
+                          <tr>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">bipu@gmail.com</td>
+                            <td class="searchfield3">external manager</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
 
-                            <ul
-                              class="dropdown-menu"
-                              aria-labelledby="dropdownMenuLink"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">View</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Edit</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#">Delete</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">bipu@gmail.com</td>
+                            <td class="searchfield3">external manager</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">bipu@gmail.com</td>
+                            <td class="searchfield3">external manager</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">bipu@gmail.com</td>
+                            <td class="searchfield3">external manager</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="noresult" style="display: none">
+                        <div class="text-center">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/msoeawqm.json"
+                            trigger="loop"
+                            colors="primary:#121331,secondary:#08a88a"
+                            style="width: 75px; height: 75px"
+                          >
+                          </lord-icon>
+                          <h5 class="mt-2">Sorry! No Result Found</h5>
+                          <p class="text-muted mb-0">
+                            We've searched more than 150+ Orders We did not find
+                            any orders for you search.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1215,11 +1237,38 @@
 
     <!-- listjs init -->
     <script src="assets/js/pages/listjs.init.js"></script>
+    <!-- ckeditor -->
+    <script src="assets/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+    <script src="assets/js/pages/form-editor.init.js"></script>
+
+    <!-------------Jquery-------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
 
-    <!---------------Jquery-------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+
+      $(function () {
+        $("[rel='tooltip']").tooltip();
+      });
+    </script>
   </body>
 </html>
