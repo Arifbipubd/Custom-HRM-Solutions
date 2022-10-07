@@ -838,36 +838,22 @@
                 <div class="collapse menu-dropdown" id="coreHrDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="organization.html"
-                        class="nav-link"
-                      >
-                       Organisation
+                      <a href="organization.html" class="nav-link">
+                        Organisation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="designation.html"
-                        class="nav-link"
-                      >
+                      <a href="designation.html" class="nav-link">
                         Designation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="department.html"
-                        class="nav-link"
-                      >
+                      <a href="department.html" class="nav-link">
                         Department
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="function.html"
-                        class="nav-link"
-                      >
-                        Function
-                      </a>
+                      <a href="function.html" class="nav-link"> Function </a>
                     </li>
                   </ul>
                 </div>
@@ -879,36 +865,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#policyDropdown" data-bs-toggle="collapse"
+                <a
+                  class="nav-link menu-link"
+                  href="#policyDropdown"
+                  data-bs-toggle="collapse"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="coreHrDropdown">
+                  aria-controls="coreHrDropdown"
+                >
                   <i class="las la-receipt"></i>
                   <span data-key="t-dashboards">Policy</span>
                 </a>
-                  <div class="collapse menu-dropdown" id="policyDropdown">
+                <div class="collapse menu-dropdown" id="policyDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="systemPolicy.html"
-                        class="nav-link"
-                      >
-                       System Policy
+                      <a href="systemPolicy.html" class="nav-link">
+                        System Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="organizationPolicy.html"
-                        class="nav-link"
-                      >
+                      <a href="organizationPolicy.html" class="nav-link">
                         organization Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="announcement.html"
-                        class="nav-link"
-                      >
+                      <a href="announcement.html" class="nav-link">
                         Announcement
                       </a>
                     </li>
@@ -940,59 +921,13 @@
       <div class="main-content">
         <div class="page-content">
           <div class="container-fluid">
-            <div class="row mb-5">
-              <div class="col-lg-4">
-                <div
-                  class="coreHrMenu d-flex align-items-center"
-                  onclick="location.href='systemPolicy.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>System Policy</p>
-                    <small>Set up system policy</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div
-                  class="coreHrMenu d-flex align-items-center hrMenuactive"
-                  onclick="location.href='organizationPolicy.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Organization Policy</p>
-                    <small>Set up organization policy</small>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div
-                  class="coreHrMenu d-flex align-items-center"
-                  onclick="location.href='announcement.html'"
-                >
-                  <div
-                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
-                  >
-                    <i class="las la-stream"></i>
-                  </div>
-                  <div class="coreHrMenuText">
-                    <p>Announcement</p>
-                    <small>Set up Announcement</small>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="row">
               <div class="col-lg-12">
                 <div class="card p-4">
+                  <div>
+                    <h4>List All Leave</h4>
+                    <hr />
+                  </div>
                   <div id="customerList">
                     <div class="row g-4 mb-3">
                       <div class="col-sm">
@@ -1004,14 +939,13 @@
                           >
                             <span id="showBtn">
                               <i class="ri-add-line align-bottom me-1"></i> Add
-                              OrganizationPolicy
+                              New
                             </span>
                             <span
                               id="hideBtn"
                               style="display: none; align-items: center"
                             >
                               <i class="las la-minus align-bottom me-1"></i>Hide
-                              OrganizationPolicy
                             </span>
                           </button>
                         </div>
@@ -1022,55 +956,128 @@
                         <div class="col-lg-12">
                           <div class="card p-4">
                             <div class="mb-4">
-                              <h2>Add Organisation Policy</h2>
+                              <h2>Add Leave</h2>
                             </div>
                             <form action="">
                               <div class="row">
                                 <div class="col-lg-4">
                                   <div class="mb-3">
-                                    <label class="form-label">Title</label>
+                                    <label
+                                      for=""
+                                      class="form-label d-flex align-items-center"
+                                      >Employee
+                                      <i
+                                        class="las la-question-circle tooltip-icon mx-1"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Employee"
+                                        rel="tooltip"
+                                      ></i
+                                    ></label>
+                                    <select id="" placeholder="Choose Status">
+                                      <option value="">
+                                        Select a Employee...
+                                      </option>
+                                      <option>Employee 1</option>
+                                      <option>Employee 2</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label
+                                      for=""
+                                      class="form-label d-flex align-items-center"
+                                      >Leave Type</label
+                                    >
+                                    <select id="" placeholder="Choose Status">
+                                      <option value="">
+                                        Select a Leave Type...
+                                      </option>
+                                      <option>Sick Leave</option>
+                                      <option>Casual leave</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label class="form-label">Start Date</label>
+                                    <input type="date" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label class="form-label">End Date</label>
+                                    <input type="date" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label class="form-label">Duration</label>
                                     <input
-                                      type="text"
+                                      type="number"
                                       class="form-control"
-                                      placeholder="Enter title"
+                                      placeholder=""
+                                      readonly
                                     />
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label class="form-label">Half Day</label>
+                                    <div>
+                                      <label class="switch">
+                                        <input type="checkbox" checked />
+                                        <span class="slider round"></span>
+                                      </label>
+                                    </div>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="mb-3">
                                     <label class="form-label"
-                                      >Organisation</label
-                                    >
-                                    <input
-                                      type="text"
+                                      >Remarks
+                                      <i
+                                        class="las la-question-circle tooltip-icon mx-1"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Remarks"
+                                        rel="tooltip"
+                                      ></i>
+                                    </label>
+                                    <textarea
                                       class="form-control"
-                                      placeholder="Enter Organization "
-                                    />
+                                      rows="1"
+                                      placeholder="Enter Remarks"
+                                    ></textarea>
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="mb-3">
-                                    <label class="form-label">Summary </label>
-                                    <input
-                                      type="text"
+                                    <label class="form-label"
+                                      >Leave Reason</label
+                                    >
+                                    <textarea
                                       class="form-control"
-                                      placeholder="Enter Summary"
-                                    />
+                                      rows="1"
+                                      placeholder="Enter Remarks"
+                                    ></textarea>
                                   </div>
                                 </div>
-                                <div class="col-lg-12">
-                                  <div class="card">
-                                    <div class="align-items-center d-flex">
-                                      <h4 class="mb-3">Description</h4>
-                                    </div>
-                                    <!-- end card header -->
-
-                                    <div class="">
-                                      <div class="ckeditor-classic"></div>
-                                    </div>
-                                    <!-- end card-body -->
+                                <div class="col-lg-4">
+                                  <div class="mb-3">
+                                    <label class="form-label"
+                                      >Leave Attachment</label
+                                    >
+                                    <input
+                                      type="file"
+                                      accept=".jpg, .png, .pdf, .doc"
+                                      class="form-control"
+                                      placeholder="Enter Affiliation"
+                                    />
                                   </div>
-                                  <!-- end card -->
                                 </div>
                               </div>
                               <div class="col-lg-12">
@@ -1078,7 +1085,7 @@
                                   <div>
                                     <button
                                       type="submit"
-                                      class="btn btn-danger px-5 mx-1"
+                                      class="btn btn-danger px-4 mx-1"
                                     >
                                       Cancel
                                     </button>
@@ -1086,7 +1093,7 @@
                                   <div>
                                     <button
                                       type="submit"
-                                      class="btn btn-primary px-5 mx-1"
+                                      class="btn btn-primary px-4 mx-1"
                                     >
                                       Submit
                                     </button>
@@ -1121,17 +1128,15 @@
                       >
                         <thead class="table-light">
                           <tr>
-                            <th class="sort" data-sort="organizations">
-                              Organization Name
+                            <th class="sort" data-sort="Employee">Employee</th>
+                            <th class="sort" data-sort="leave">Leave type</th>
+                            <th class="sort" data-sort="Duration">Duration</th>
+                            <th class="sort" data-sort="Days">Days</th>
+                            <th class="sort" data-sort="Applied on">
+                              Applied on
                             </th>
-                            <th class="sort" data-sort="Phone">Phone</th>
-                            <th class="sort" data-sort="email">
-                              Email Address
-                            </th>
-                            <th class="sort" data-sort="address">Address</th>
-                            <th class="sort" data-sort="reg-no">
-                              Registration No
-                            </th>
+                            <th class="sort" data-sort="Status">Status</th>
+
                             <th class="sort float-end" data-sort="action">
                               Action
                             </th>
@@ -1139,177 +1144,182 @@
                         </thead>
                         <tbody class="list form-check-all">
                           <tr>
-                            <td class="searchfield1">Evocation it</td>
-                            <td class="searchfield2">01887980841</td>
-                            <td class="searchfield3">bipu@gmail.com</td>
-                            <td class="searchfield4">Dhaka</td>
-                            <td class="searchfield5">Registration No</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Sick Levae</td>
+                            <td class="searchfield4">
+                              01/01/2023 - 03-01-2023
+                            </td>
+                            <td class="searchfield3">2 Days</td>
+                            <td class="searchfield4">01/01/2023</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-success text-uppercase"
+                                >Approved</span
+                              >
+                            </td>
                             <td>
-                              <div class="dropdown float-end">
-                                <a
-                                  href="#"
-                                  role="button"
-                                  id="dropdownMenuLink"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ri-more-2-fill"></i>
-                                </a>
-
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuLink"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">View</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                  </li>
-                                </ul>
+                              <div class="d-flex gap-2 float-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#approveModal"
+                                  >
+                                    Approve
+                                  </button>
+                                </div>
+                                <div class="view">
+                                  <button 
+                                  class="btn btn-sm btn-danger"
+                                  data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    Reject
+                                  </button>
+                                </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td class="organization_name">Evocation it</td>
-                            <td class="phone">01887980841</td>
-                            <td class="email">bipu@gmail.com</td>
-                            <td class="address">Dhaka</td>
-                            <td class="status">Registration No</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Sick Levae</td>
+                            <td class="searchfield4">
+                              01/01/2023 - 03-01-2023
+                            </td>
+                            <td class="searchfield3">2 Days</td>
+                            <td class="searchfield4">01/01/2023</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-warning text-uppercase"
+                                >Pending</span
+                              >
+                            </td>
                             <td>
-                              <div class="dropdown float-end">
-                                <a
-                                  href="#"
-                                  role="button"
-                                  id="dropdownMenuLink"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ri-more-2-fill"></i>
-                                </a>
-
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuLink"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">View</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                  </li>
-                                </ul>
+                              <div class="d-flex gap-2 float-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#approveModal"
+                                  >
+                                    Approve
+                                  </button>
+                                </div>
+                                <div class="view">
+                                  <button 
+                                  class="btn btn-sm btn-danger"
+                                  data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    Reject
+                                  </button>
+                                </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td class="organization_name">Evocation it</td>
-                            <td class="phone">01887980841</td>
-                            <td class="email">bipu@gmail.com</td>
-                            <td class="address">Dhaka</td>
-                            <td class="status">Registration No</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Sick Levae</td>
+                            <td class="searchfield4">
+                              01/01/2023 - 03-01-2023
+                            </td>
+                            <td class="searchfield3">2 Days</td>
+                            <td class="searchfield4">01/01/2023</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-danger text-uppercase"
+                                >Reject</span
+                              >
+                            </td>
                             <td>
-                              <div class="dropdown float-end">
-                                <a
-                                  href="#"
-                                  role="button"
-                                  id="dropdownMenuLink"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ri-more-2-fill"></i>
-                                </a>
-
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuLink"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">View</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                  </li>
-                                </ul>
+                              <div class="d-flex gap-2 float-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#approveModal"
+                                  >
+                                    Approve
+                                  </button>
+                                </div>
+                                <div class="view">
+                                  <button 
+                                  class="btn btn-sm btn-danger"
+                                  data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    Reject
+                                  </button>
+                                </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td class="organization_name">Evocation it</td>
-                            <td class="phone">01887980841</td>
-                            <td class="email">bipu@gmail.com</td>
-                            <td class="address">Dhaka</td>
-                            <td class="status">Registration No</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Sick Levae</td>
+                            <td class="searchfield4">
+                              01/01/2023 - 03-01-2023
+                            </td>
+                            <td class="searchfield3">2 Days</td>
+                            <td class="searchfield4">01/01/2023</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-success text-uppercase"
+                                >Approved</span
+                              >
+                            </td>
                             <td>
-                              <div class="dropdown float-end">
-                                <a
-                                  href="#"
-                                  role="button"
-                                  id="dropdownMenuLink"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ri-more-2-fill"></i>
-                                </a>
-
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuLink"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">View</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                  </li>
-                                </ul>
+                              <div class="d-flex gap-2 float-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#approveModal"
+                                  >
+                                    Approve
+                                  </button>
+                                </div>
+                                <div class="view">
+                                  <button 
+                                  class="btn btn-sm btn-danger"
+                                  data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    Reject
+                                  </button>
+                                </div>
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td class="organization_name">Evocation it</td>
-                            <td class="phone">01887980841</td>
-                            <td class="email">bipu@gmail.com</td>
-                            <td class="address">Dhaka</td>
-                            <td class="status">Registration No</td>
+                            <td class="searchfield1">Arif Bipu</td>
+                            <td class="searchfield2">Sick Levae</td>
+                            <td class="searchfield4">
+                              01/01/2023 - 03-01-2023
+                            </td>
+                            <td class="searchfield3">2 Days</td>
+                            <td class="searchfield4">01/01/2023</td>
+                            <td class="searchfield5">
+                              <span
+                                class="badge badge-soft-success text-uppercase"
+                                >Approved</span
+                              >
+                            </td>
                             <td>
-                              <div class="dropdown float-end">
-                                <a
-                                  href="#"
-                                  role="button"
-                                  id="dropdownMenuLink"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i class="ri-more-2-fill"></i>
-                                </a>
-
-                                <ul
-                                  class="dropdown-menu"
-                                  aria-labelledby="dropdownMenuLink"
-                                >
-                                  <li>
-                                    <a class="dropdown-item" href="#">View</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Edit</a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">Delete</a>
-                                  </li>
-                                </ul>
+                              <div class="d-flex gap-2 float-end">
+                                <div class="edit">
+                                  <button
+                                    class="btn btn-sm btn-success edit-item-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#approveModal"
+                                  >
+                                    Approve
+                                  </button>
+                                </div>
+                                <div class="view">
+                                  <button 
+                                  class="btn btn-sm btn-danger"
+                                  data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    Reject
+                                  </button>
+                                </div>
                               </div>
                             </td>
                           </tr>
@@ -1347,6 +1357,69 @@
             </div>
           </div>
         </div>
+
+        <!----------------Approve Modaal--------------->
+        <div
+          id="approveModal"
+          class="modal flip"
+          tabindex="-1"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+          style="display: none"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-5">
+              <div class="modal-body text-center">
+                <h4>Are You Sure You Want To Approve?</h4>
+              </div>
+              <div class="text-center mb-3">
+                <button
+                  type="button"
+                  class="btn btn-success px-4"
+                  data-bs-dismiss="modal"
+                >
+                  No
+                </button>
+                <button type="button" class="btn btn-danger px-4">Yes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!---------------Delete Modal-------------->
+
+        <div
+          id="deleteModal"
+          class="modal flip"
+          tabindex="-1"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+          style="display: none"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content py-5">
+              <div class="modal-body text-center">
+                <h4>Are You Sure You Want To Reject?</h4>
+              </div>
+              <div class="text-center mb-3">
+                <button
+                  type="button"
+                  class="btn btn-success px-4"
+                  data-bs-dismiss="modal"
+                >
+                  No
+                </button>
+                <button type="button" class="btn btn-danger px-4">Yes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
 
         <footer class="footer">
           <div class="container-fluid">
@@ -1393,16 +1466,35 @@
 
     <!-- listjs init -->
     <script src="assets/js/pages/listjs.init.js"></script>
-    <!-- ckeditor -->
-    <script src="assets/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
-    <script src="assets/js/pages/form-editor.init.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
 
     <!---------------Jquery-------------->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
     <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+
+      $(function () {
+        $("[rel='tooltip']").tooltip();
+      });
+
       function toggle() {
         var content = document.getElementById("contentDiv");
         if (content.style.display == "block") {
