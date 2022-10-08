@@ -1004,19 +1004,28 @@
                                 <div class="col-lg-4">
                                   <div class="mb-3">
                                     <label class="form-label">Start Date</label>
-                                    <input type="date" class="form-control" />
+                                    <input
+                                      id="start_Date"
+                                      type="date"
+                                      class="form-control"
+                                    />
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="mb-3">
                                     <label class="form-label">End Date</label>
-                                    <input type="date" class="form-control" />
+                                    <input
+                                      id="end_Date"
+                                      type="date"
+                                      class="form-control"
+                                    />
                                   </div>
                                 </div>
                                 <div class="col-lg-4">
                                   <div class="mb-3">
                                     <label class="form-label">Duration</label>
                                     <input
+                                      id="duration_Time"
                                       type="number"
                                       class="form-control"
                                       placeholder=""
@@ -1169,10 +1178,11 @@
                                   </button>
                                 </div>
                                 <div class="view">
-                                  <button 
-                                  class="btn btn-sm btn-danger"
-                                  data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal">
+                                  <button
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
                                     Reject
                                   </button>
                                 </div>
@@ -1205,10 +1215,11 @@
                                   </button>
                                 </div>
                                 <div class="view">
-                                  <button 
-                                  class="btn btn-sm btn-danger"
-                                  data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal">
+                                  <button
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
                                     Reject
                                   </button>
                                 </div>
@@ -1241,10 +1252,11 @@
                                   </button>
                                 </div>
                                 <div class="view">
-                                  <button 
-                                  class="btn btn-sm btn-danger"
-                                  data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal">
+                                  <button
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
                                     Reject
                                   </button>
                                 </div>
@@ -1277,10 +1289,11 @@
                                   </button>
                                 </div>
                                 <div class="view">
-                                  <button 
-                                  class="btn btn-sm btn-danger"
-                                  data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal">
+                                  <button
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
                                     Reject
                                   </button>
                                 </div>
@@ -1313,10 +1326,11 @@
                                   </button>
                                 </div>
                                 <div class="view">
-                                  <button 
-                                  class="btn btn-sm btn-danger"
-                                  data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal">
+                                  <button
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                  >
                                     Reject
                                   </button>
                                 </div>
@@ -1507,6 +1521,42 @@
           document.getElementById("showBtn").style.display = "none";
         }
       }
+
+      /**************calculate Date*******************/
+      const setup = () => {
+        let firstDate = $("#start_Date").val();
+        let secondDate = $("#end_Date").val();
+        const findTheDifferenceBetweenTwoDates = (firstDate, secondDate) => {
+          firstDate = new Date(firstDate);
+          secondDate = new Date(secondDate);
+
+          let timeDifference = Math.abs(
+            secondDate.getTime() - firstDate.getTime()
+          );
+
+          let millisecondsInADay = 1000 * 3600 * 24;
+
+          let differenceOfDays = Math.ceil(timeDifference / millisecondsInADay);
+
+          return differenceOfDays;
+        };
+
+        let result = findTheDifferenceBetweenTwoDates(firstDate, secondDate);
+        $("#duration_Time").val(result);
+      };
+
+      $(document).ready(function () {
+        $("#start_Date").change(function () {
+          if ($("#end_Date").val() != "") {
+            setup();
+          }
+        });
+        $("#end_Date").change(function () {
+          if ($("#start_Date").val() != "") {
+            setup();
+          }
+        });
+      });
     </script>
   </body>
 </html>
