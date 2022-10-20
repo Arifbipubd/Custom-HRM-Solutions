@@ -838,36 +838,22 @@
                 <div class="collapse menu-dropdown" id="coreHrDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="organization.html"
-                        class="nav-link"
-                      >
-                       Organisation
+                      <a href="organization.html" class="nav-link">
+                        Organisation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="designation.html"
-                        class="nav-link"
-                      >
+                      <a href="designation.html" class="nav-link">
                         Designation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="department.html"
-                        class="nav-link"
-                      >
+                      <a href="department.html" class="nav-link">
                         Department
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="function.html"
-                        class="nav-link"
-                      >
-                        Function
-                      </a>
+                      <a href="function.html" class="nav-link"> Function </a>
                     </li>
                   </ul>
                 </div>
@@ -879,36 +865,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#policyDropdown" data-bs-toggle="collapse"
+                <a
+                  class="nav-link menu-link"
+                  href="#policyDropdown"
+                  data-bs-toggle="collapse"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="coreHrDropdown">
+                  aria-controls="coreHrDropdown"
+                >
                   <i class="las la-receipt"></i>
                   <span data-key="t-dashboards">Policy</span>
                 </a>
-                  <div class="collapse menu-dropdown" id="policyDropdown">
+                <div class="collapse menu-dropdown" id="policyDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="systemPolicy.html"
-                        class="nav-link"
-                      >
-                       System Policy
+                      <a href="systemPolicy.html" class="nav-link">
+                        System Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="organizationPolicy.html"
-                        class="nav-link"
-                      >
+                      <a href="organizationPolicy.html" class="nav-link">
                         organization Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="announcement.html"
-                        class="nav-link"
-                      >
+                      <a href="announcement.html" class="nav-link">
                         Announcement
                       </a>
                     </li>
@@ -1405,7 +1386,286 @@
                             id="nav-basicInf"
                             role="tabpanel"
                           >
-                            <div class="my-5">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="basicInfoToggle()"
+                                    >
+                                      <span id="showBtn">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Information
+                                      </span>
+                                      <span
+                                        id="hideBtn"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Information
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Bassic Information</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Date of Birth</label
+                                              >
+                                              <input
+                                                type="date"
+                                                class="form-control"
+                                                placeholder=""
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Place of Birth
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Place"
+                                              >
+                                                <option value="">
+                                                  Select a Place...
+                                                </option>
+                                                <option>Bangladesh</option>
+                                                <option>Denmark</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Father’s name</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Father’s name"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Mother's name
+                                              </label>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Mother's name "
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Blood Group
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Blood Group"
+                                              >
+                                                <option value="">
+                                                  Select a Blood Group...
+                                                </option>
+                                                <option>O+</option>
+                                                <option>O-</option>
+                                                <option>A+</option>
+                                                <option>A-</option>
+                                                <option>AB+</option>
+                                                <option>AB-</option>
+                                                <option>B+</option>
+                                                <option>B-</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Gender
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Gender"
+                                              >
+                                                <option value="">
+                                                  Select a Gender...
+                                                </option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Others</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Religion
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Religion"
+                                              >
+                                                <option value="">
+                                                  Select a Religion...
+                                                </option>
+                                                <option>Muslim</option>
+                                                <option>Hindu</option>
+                                                <option>Buddhist</option>
+                                                <option>Christian</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Material Status
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Material Status"
+                                              >
+                                                <option value="">
+                                                  Select a Material Status...
+                                                </option>
+                                                <option>Married</option>
+                                                <option>Unmarried</option>
+                                                <option>Divorced</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >NID Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter NID Number"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Birth Certificate Number</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Birth Certificate Number"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Passport Number</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Passport Number"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label
+                                                for=""
+                                                class="form-label d-flex align-items-center"
+                                                >Nationality
+                                              </label>
+                                              <select
+                                                id=""
+                                                placeholder="Choose Nationality"
+                                              >
+                                                <option value="">
+                                                  Select a Nationality...
+                                                </option>
+                                                <option>Bangladeshi</option>
+                                                <option>Indian</option>
+                                                <option>Italian</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Leave Attachment</label
+                                              >
+                                              <input
+                                                type="file"
+                                                accept=".jpg, .png"
+                                                class="form-control"
+                                                placeholder="Enter Affiliation"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -1550,7 +1810,124 @@
                             id="nav-contactInfo"
                             role="tabpanel"
                           >
-                            <div class="my-5">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="contactToggle()"
+                                    >
+                                      <span id="showBtn2">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Contact
+                                      </span>
+                                      <span
+                                        id="hideBtn2"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Contact
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv2">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Contact Information</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Alternative Phone Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter Alternative Phone Number"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Alternative Email Address
+                                              </label>
+                                              <input
+                                                type="email"
+                                                class="form-control"
+                                                placeholder="Enter Alternative Email Address "
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Present Address</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Present Address"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Permanent Address</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Permanent Address"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -1620,7 +1997,124 @@
                             id="nav-emergencyContact"
                             role="tabpanel"
                           >
-                            <div class="my">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="emergencyToggle()"
+                                    >
+                                      <span id="showBtn3">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Emergency Contact
+                                      </span>
+                                      <span
+                                        id="hideBtn3"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Emergency Contact
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv3">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Emergency Contact</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Name</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Name"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Relation
+                                              </label>
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Relation "
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >contact Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter Contact Number"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Address</label
+                                              >
+                                              <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Enter Address"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -1669,7 +2163,112 @@
                             </div>
                           </div>
                           <div class="tab-pane" id="nav-social" role="tabpanel">
-                            <div class="my-5">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="socialToggle()"
+                                    >
+                                      <span id="showBtn4">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Emergency Contact
+                                      </span>
+                                      <span
+                                        id="hideBtn4"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Emergency Contact
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv4">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Social</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Facebook</label
+                                              >
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Facebook Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Linked in
+                                              </label>
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Linked in Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >WhatsApp Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter WhatsApp Number"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -1742,7 +2341,112 @@
                             id="nav-bankInfo"
                             role="tabpanel"
                           >
-                            <div class="my-5">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="bankInfoToggle()"
+                                    >
+                                      <span id="showBtn5">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Emergency Contact
+                                      </span>
+                                      <span
+                                        id="hideBtn5"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Emergency Contact
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv5">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Social</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Facebook</label
+                                              >
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Facebook Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Linked in
+                                              </label>
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Linked in Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >WhatsApp Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter WhatsApp Number"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -1814,7 +2518,112 @@
                             id="nav-insurance"
                             role="tabpanel"
                           >
-                            <div class="my-5">
+                            <div class="my-3">
+                              <div class="row g-4 mb-3">
+                                <div class="col-sm">
+                                  <div
+                                    class="d-flex gap-2 justify-content-sm-end"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn btn-success add-btn"
+                                      onclick="insuranceNomineeToggle()"
+                                    >
+                                      <span id="showBtn6">
+                                        <i
+                                          class="ri-add-line align-bottom me-1"
+                                        ></i>
+                                        Edit Emergency Contact
+                                      </span>
+                                      <span
+                                        id="hideBtn6"
+                                        style="
+                                          display: none;
+                                          align-items: center;
+                                        "
+                                      >
+                                        <i
+                                          class="las la-minus align-bottom me-1"
+                                        ></i
+                                        >Hide Emergency Contact
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="" id="contentDiv6">
+                                <div class="row">
+                                  <div class="col-lg-12">
+                                    <div class="card p-4">
+                                      <div class="mb-4">
+                                        <h2>Add Social</h2>
+                                      </div>
+                                      <form action="">
+                                        <div class="row">
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Facebook</label
+                                              >
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Facebook Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >Linked in
+                                              </label>
+                                              <input
+                                                type="url"
+                                                class="form-control"
+                                                placeholder="Enter Linked in Url"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-4">
+                                            <div class="mb-3">
+                                              <label class="form-label"
+                                                >WhatsApp Number</label
+                                              >
+                                              <input
+                                                type="number"
+                                                class="form-control"
+                                                placeholder="Enter WhatsApp Number"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                          <div
+                                            class="d-flex justify-content-center"
+                                          >
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-danger px-5 mx-1"
+                                              >
+                                                Cancel
+                                              </button>
+                                            </div>
+                                            <div>
+                                              <button
+                                                type="submit"
+                                                class="btn btn-primary px-5 mx-1"
+                                              >
+                                                Submit
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                               <div class="row">
                                 <div class="col-lg-4 mb-4">
                                   <div>
@@ -2360,8 +3169,11 @@
                           >
                             <div>
                               <div class="d-flex justify-content-end mb-3">
-                                <button type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="las la-plus"></i>  Add New
+                                <button
+                                  type="button"
+                                  class="btn btn-primary waves-effect waves-light"
+                                >
+                                  <i class="las la-plus"></i> Add New
                                 </button>
                               </div>
                               <table
@@ -2372,9 +3184,7 @@
                                     <th scope="col">Filename</th>
                                     <th scope="col">Upload Date</th>
                                     <th scope="col">
-                                      <div class="float-end">
-                                        Action
-                                      </div>
+                                      <div class="float-end">Action</div>
                                     </th>
                                   </tr>
                                 </thead>
@@ -2383,7 +3193,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2401,7 +3213,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2419,7 +3233,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2437,7 +3253,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2462,8 +3280,11 @@
                           >
                             <div>
                               <div class="d-flex justify-content-end mb-3">
-                                <button type="button" class="btn btn-primary waves-effect waves-light">
-                                <i class="las la-plus"></i>  Add New
+                                <button
+                                  type="button"
+                                  class="btn btn-primary waves-effect waves-light"
+                                >
+                                  <i class="las la-plus"></i> Add New
                                 </button>
                               </div>
                               <table
@@ -2474,9 +3295,7 @@
                                     <th scope="col">Filename</th>
                                     <th scope="col">Upload Date</th>
                                     <th scope="col">
-                                      <div class="float-end">
-                                        Action
-                                      </div>
+                                      <div class="float-end">Action</div>
                                     </th>
                                   </tr>
                                 </thead>
@@ -2485,7 +3304,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2503,7 +3324,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2521,7 +3344,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2539,7 +3364,9 @@
                                     <td>Arif Bipu</td>
                                     <td>01/01/2022</td>
                                     <td>
-                                      <div class="hstack gap-3 flex-wrap float-end">
+                                      <div
+                                        class="hstack gap-3 flex-wrap float-end"
+                                      >
                                         <a
                                           href="javascript:void(0);"
                                           class="link-success fs-15"
@@ -2614,7 +3441,199 @@
     <!-- listjs init -->
     <script src="assets/js/pages/listjs.init.js"></script>
 
+    <!-----------------Serch Filter CDN-------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
+
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+
+      function basicInfoToggle() {
+        var content = document.getElementById("contentDiv");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn").style.display = "block";
+          document.getElementById("hideBtn").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn").style.display = "flex";
+          document.getElementById("showBtn").style.display = "none";
+        }
+      }
+
+      function contactToggle() {
+        var content = document.getElementById("contentDiv2");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn2").style.display = "block";
+          document.getElementById("hideBtn2").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn2").style.display = "flex";
+          document.getElementById("showBtn2").style.display = "none";
+        }
+      }
+      function emergencyToggle() {
+        var content = document.getElementById("contentDiv3");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn3").style.display = "block";
+          document.getElementById("hideBtn3").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn3").style.display = "flex";
+          document.getElementById("showBtn3").style.display = "none";
+        }
+      }
+      function socialToggle() {
+        var content = document.getElementById("contentDiv4");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn4").style.display = "block";
+          document.getElementById("hideBtn4").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn4").style.display = "flex";
+          document.getElementById("showBtn4").style.display = "none";
+        }
+      }
+      function bankInfoToggle() {
+        var content = document.getElementById("contentDiv5");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn5").style.display = "block";
+          document.getElementById("hideBtn5").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn5").style.display = "flex";
+          document.getElementById("showBtn5").style.display = "none";
+        }
+      }
+      function insuranceNomineeToggle() {
+        var content = document.getElementById("contentDiv6");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn6").style.display = "block";
+          document.getElementById("hideBtn6").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn6").style.display = "flex";
+          document.getElementById("showBtn6").style.display = "none";
+        }
+      }
+      function educationToggle() {
+        var content = document.getElementById("contentDiv7");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn7").style.display = "block";
+          document.getElementById("hideBtn7").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn7").style.display = "flex";
+          document.getElementById("showBtn7").style.display = "none";
+        }
+      }
+      function trainingToggle() {
+        var content = document.getElementById("contentDiv8");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn8").style.display = "block";
+          document.getElementById("hideBtn8").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn8").style.display = "flex";
+          document.getElementById("showBtn8").style.display = "none";
+        }
+      }
+      function profesionalCertificateToggle() {
+        var content = document.getElementById("contentDiv9");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn9").style.display = "block";
+          document.getElementById("hideBtn9").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn2").style.display = "flex";
+          document.getElementById("showBtn2").style.display = "none";
+        }
+      }
+      function skillToggle() {
+        var content = document.getElementById("contentDiv10");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn10").style.display = "block";
+          document.getElementById("hideBtn10").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn10").style.display = "flex";
+          document.getElementById("showBtn10").style.display = "none";
+        }
+      }
+      function extraCurricularToggle() {
+        var content = document.getElementById("contentDiv11");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn11").style.display = "block";
+          document.getElementById("hideBtn11").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn11").style.display = "flex";
+          document.getElementById("showBtn11").style.display = "none";
+        }
+      }
+      function jobExperienceToggle() {
+        var content = document.getElementById("contentDiv12");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn12").style.display = "block";
+          document.getElementById("hideBtn12").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn12").style.display = "flex";
+          document.getElementById("showBtn12").style.display = "none";
+        }
+      }
+      function referenceToggle() {
+        var content = document.getElementById("contentDiv13");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn13").style.display = "block";
+          document.getElementById("hideBtn13").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn13").style.display = "flex";
+          document.getElementById("showBtn13").style.display = "none";
+        }
+      }
+      function documentToggle() {
+        var content = document.getElementById("contentDiv14");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn14").style.display = "block";
+          document.getElementById("hideBtn14").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn14").style.display = "flex";
+          document.getElementById("showBtn14").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

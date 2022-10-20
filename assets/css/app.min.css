@@ -14436,7 +14436,45 @@ span.flatpickr-weekday {
 
 #contentDiv {
   display: none;
-  transition: 1s ease-in-out;
+}
+#contentDiv2 {
+  display: none;
+}
+#contentDiv3 {
+  display: none;
+}
+#contentDiv4 {
+  display: none;
+}
+#contentDiv5 {
+  display: none;
+}
+#contentDiv6 {
+  display: none;
+}
+#contentDiv7 {
+  display: none;
+}
+#contentDiv8 {
+  display: none;
+}
+#contentDiv9 {
+  display: none;
+}
+#contentDiv10 {
+  display: none;
+}
+#contentDiv11 {
+  display: none;
+}
+#contentDiv12 {
+  display: none;
+}
+#contentDiv13 {
+  display: none;
+}
+#contentDiv14 {
+  display: none;
 }
 
 /****************Switch*********************/
