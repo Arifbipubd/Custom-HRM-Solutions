@@ -921,670 +921,103 @@
       <div class="main-content">
         <div class="page-content">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="card p-4">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="card p-5">
                   <div>
-                    <h4>List All Leave</h4>
-                    <hr />
+                    <div>
+                      <h5>Employee Name :</h5>
+                    </div>
+                    <div>
+                      <h5>Email :</h5>
+                    </div>
+                    <div>
+                      <h5>Organization :</h5>
+                    </div>
+                    <div class="mb-4">
+                      <h5>Designation :</h5>
+                    </div>
+                    <div class="mb-3">
+                      <h5>
+                        Leave Request Action
+                        <span
+                          ><i
+                            class="las la-question-circle tooltip-icon mx-1"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="top"
+                            title="Name"
+                            rel="tooltip"
+                          ></i
+                        ></span>
+                      </h5>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-success waves-effect waves-light"
+                        >
+                          Approve
+                        </button>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-danger waves-effect waves-light"
+                        >
+                          Reject
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div id="customerList">
-                    <div class="row g-4 mb-3">
-                      <div class="col-sm">
-                        <div class="d-flex justify-content-sm-end">
-                          <button
-                            type="button"
-                            class="btn btn-success add-btn"
-                            onclick="toggle()"
-                          >
-                            <span id="showBtn">
-                              <i class="ri-add-line align-bottom me-1"></i> Add
-                              New
-                            </span>
-                            <span
-                              id="hideBtn"
-                              style="display: none; align-items: center"
-                            >
-                              <i class="las la-minus align-bottom me-1"></i>Hide
-                            </span>
-                          </button>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card p-5">
+                  <div>
+                    <div>
+                      <h5>Leave Type :</h5>
                     </div>
-                    <div class="" id="contentDiv">
-                      <div class="row">
-                        <div class="col-lg-12">
-                          <div class="card p-4">
-                            <div class="mb-4">
-                              <h2>Add Leave</h2>
-                            </div>
-                            <form action="">
-                              <div class="row">
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label
-                                      for=""
-                                      class="form-label d-flex align-items-center"
-                                      >Employee
-                                      <i
-                                        class="las la-question-circle tooltip-icon mx-1"
-                                        data-bs-toggle="tooltip"
-                                        data-bs-placement="top"
-                                        title="Employee"
-                                        rel="tooltip"
-                                      ></i
-                                    ></label>
-                                    <select id="" placeholder="Choose Status">
-                                      <option value="">
-                                        Select a Employee...
-                                      </option>
-                                      <option>Employee 1</option>
-                                      <option>Employee 2</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label
-                                      for=""
-                                      class="form-label d-flex align-items-center"
-                                      >Leave Type</label
-                                    >
-                                    <select id="" placeholder="Choose Status">
-                                      <option value="">
-                                        Select a Leave Type...
-                                      </option>
-                                      <option>Sick Leave</option>
-                                      <option>Casual leave</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <!--end col-->
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label">Start Date</label>
-                                    <input
-                                      id="start_Date"
-                                      type="date"
-                                      class="form-control"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label">End Date</label>
-                                    <input
-                                      id="end_Date"
-                                      type="date"
-                                      class="form-control"
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label">Duration</label>
-                                    <input
-                                      id="duration_Time"
-                                      type="number"
-                                      class="form-control"
-                                      placeholder=""
-                                      readonly
-                                    />
-                                  </div>
-                                </div>
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label">Half Day</label>
-                                    <div>
-                                      <label class="switch">
-                                        <input type="checkbox" checked />
-                                        <span class="slider round"></span>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label"
-                                      >Remarks
-                                      <i
-                                        class="las la-question-circle tooltip-icon mx-1"
-                                        data-bs-toggle="tooltip"
-                                        data-bs-placement="top"
-                                        title="Remarks"
-                                        rel="tooltip"
-                                      ></i>
-                                    </label>
-                                    <textarea
-                                      class="form-control"
-                                      rows="1"
-                                      placeholder="Enter Remarks"
-                                    ></textarea>
-                                  </div>
-                                </div>
-                                <div class="col-lg-4">
-                                  <div class="mb-3">
-                                    <label class="form-label"
-                                      >Leave Reason</label
-                                    >
-                                    <textarea
-                                      class="form-control"
-                                      rows="1"
-                                      placeholder="Enter Remarks"
-                                    ></textarea>
-                                  </div>
-                                </div>
-                                  <div class="col-lg-4">
-                                    <div class="mb-3">
-                                      <label class="form-label"
-                                        >Leave Attachment</label
-                                      >
-                                      <input
-                                        type="file"
-                                        accept=".jpg, .png, .pdf, .doc"
-                                        class="form-control"
-                                        placeholder="Enter Affiliation"
-                                      />
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="d-flex justify-content-center">
-                                  <div>
-                                    <button
-                                      type="submit"
-                                      class="btn btn-danger px-4 mx-1"
-                                    >
-                                      Cancel
-                                    </button>
-                                  </div>
-                                  <div>
-                                    <button
-                                      type="submit"
-                                      class="btn btn-primary px-4 mx-1"
-                                    >
-                                      Submit
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+                    <div>
+                      <h5>Start Date :</h5>
                     </div>
-
-                    <div class="col-sm-auto">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="search-box ms-2">
-                            <input
-                              type="text"
-                              class="form-control search"
-                              placeholder="Search..."
-                            />
-                            <i class="ri-search-line search-icon"></i>
-                          </div>
-                        </div>
-                      </div>
+                    <div>
+                      <h5>End Date :</h5>
                     </div>
-
-                    <div class="table-responsive table-card mt-3 mb-1 px-3">
-                      <table
-                        class="table align-middle table-nowrap"
-                        id="customerTable"
-                      >
-                        <thead class="table-light">
-                          <tr>
-                            <th class="sort" data-sort="Employee">Employee</th>
-                            <th class="sort" data-sort="leave">Leave type</th>
-                            <th class="sort" data-sort="Duration">Duration</th>
-                            <th class="sort" data-sort="Days">Days</th>
-                            <th class="sort" data-sort="Applied on">
-                              Applied on
-                            </th>
-                            <th class="sort" data-sort="Status">Status</th>
-
-                            <th class="sort float-end" data-sort="action">
-                              Action
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody class="list form-check-all">
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-warning text-uppercase"
-                                >Pending</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-danger text-uppercase"
-                                >Reject</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="searchfield1">Arif Bipu</td>
-                            <td class="searchfield2">Sick Levae</td>
-                            <td class="searchfield4">
-                              01/01/2023 - 03-01-2023
-                            </td>
-                            <td class="searchfield3">2 Days</td>
-                            <td class="searchfield4">01/01/2023</td>
-                            <td class="searchfield5">
-                              <span
-                                class="badge badge-soft-success text-uppercase"
-                                >Approved</span
-                              >
-                            </td>
-                            <td>
-                              <div class="d-flex gap-2 float-end">
-                                <div class="edit">
-                                  <button
-                                    class="btn btn-sm btn-success edit-item-btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#approveModal"
-                                  >
-                                    Approve
-                                  </button>
-                                </div>
-                                <div class="view">
-                                  <button
-                                    class="btn btn-sm btn-danger"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#deleteModal"
-                                  >
-                                    Reject
-                                  </button>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="noresult" style="display: none">
-                        <div class="text-center">
-                          <lord-icon
-                            src="https://cdn.lordicon.com/msoeawqm.json"
-                            trigger="loop"
-                            colors="primary:#121331,secondary:#08a88a"
-                            style="width: 75px; height: 75px"
-                          >
-                          </lord-icon>
-                          <h5 class="mt-2">Sorry! No Result Found</h5>
-                          <p class="text-muted mb-0">
-                            We've searched more than 150+ Orders We did not find
-                            any orders for you search.
-                          </p>
-                        </div>
-                      </div>
+                    <div class=" ">
+                      <h5>Duration :</h5>
                     </div>
-                    <div class="d-flex justify-content-end">
-                      <div class="pagination-wrap hstack gap-2">
-                        <a class="page-item pagination-prev disabled" href="#">
-                          Previous
-                        </a>
-                        <ul class="pagination listjs-pagination mb-0"></ul>
-                        <a class="page-item pagination-next" href="#"> Next </a>
+                    <div>
+                      <h5>Remarks :</h5>
+                    </div>
+                    <div class="mb-4">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Totam dolores eum suscipit voluptas minus
+                        molestiae quisquam provident sit dolorum omnis?
+                      </p>
+                    </div>
+                    <div>
+                      <h5>Leave Reason :</h5>
+                    </div>
+                    <div class="mb-4">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Totam dolores eum suscipit voluptas minus
+                        molestiae quisquam provident sit dolorum omnis?
+                      </p>
+                    </div>
+                    <div class="mb-3">
+                      <h5>Attachment</h5>
+                    </div>
+                    <div class="">
+                      <div>
+                        <button
+                          type="button"
+                          class="btn btn-primary waves-effect waves-light"
+                        >
+                          <i class="las la-download"></i> Download
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1721,63 +1154,8 @@
       crossorigin="anonymous"
     />
     <script>
-      $(document).ready(function () {
-        $("select").selectize({
-          sortField: "text",
-        });
-      });
-
       $(function () {
         $("[rel='tooltip']").tooltip();
-      });
-
-      function toggle() {
-        var content = document.getElementById("contentDiv");
-        if (content.style.display == "block") {
-          content.style.display = "none";
-          document.getElementById("showBtn").style.display = "block";
-          document.getElementById("hideBtn").style.display = "none";
-        } else {
-          content.style.display = "block";
-          document.getElementById("hideBtn").style.display = "flex";
-          document.getElementById("showBtn").style.display = "none";
-        }
-      }
-
-      /**************calculate Date*******************/
-      const setup = () => {
-        let firstDate = $("#start_Date").val();
-        let secondDate = $("#end_Date").val();
-        const findTheDifferenceBetweenTwoDates = (firstDate, secondDate) => {
-          firstDate = new Date(firstDate);
-          secondDate = new Date(secondDate);
-
-          let timeDifference = Math.abs(
-            secondDate.getTime() - firstDate.getTime()
-          );
-
-          let millisecondsInADay = 1000 * 3600 * 24;
-
-          let differenceOfDays = Math.ceil(timeDifference / millisecondsInADay);
-
-          return differenceOfDays;
-        };
-
-        let result = findTheDifferenceBetweenTwoDates(firstDate, secondDate);
-        $("#duration_Time").val(result);
-      };
-
-      $(document).ready(function () {
-        $("#start_Date").change(function () {
-          if ($("#end_Date").val() != "") {
-            setup();
-          }
-        });
-        $("#end_Date").change(function () {
-          if ($("#start_Date").val() != "") {
-            setup();
-          }
-        });
       });
     </script>
   </body>
