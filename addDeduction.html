@@ -919,105 +919,534 @@
       <!-- Start right Content here -->
       <!-- ============================================================== -->
       <div class="main-content">
-        <div class="page-content">`
+        <div class="page-content">
           <div class="container-fluid">
-            <div class="card p-5">
-              <div class="row justify-content-center align-items-center mb-4">
-                <div class="col-lg-9">
-                  <div class="mb-4">
-                    <h3>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Reprehenderit, repudiandae.
-                    </h3>
+            <div class="row mb-5">
+              <div class="col-lg-4">
+                <div
+                  class="coreHrMenu d-flex align-items-center"
+                  onclick="location.href='allDeduction.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-certificate me-1 fs-20"></i>
-                          Evocation IT
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-calendar me-1 fs-20"></i> 10-20-2022
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-calendar me-1 fs-20"></i> 10-22-2023
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="d-flex justify-content-center">
-                    <button
-                      type="button"
-                      class="btn btn-outline-primary btn-label waves-effect waves-light"
-                    >
-                      <i
-                        class="las la-download label-icon align-middle fs-16 me-2"
-                      ></i>
-                      Download
-                    </button>
+                  <div class="coreHrMenuText">
+                    <p>All Deductions
+                    <small>Set up All Deductions</small>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12 mb-3">
-                  <div>
-                    <p class="fs-16">
-                      The Organisation Lorem, ipsum dolor sit amet consectetur
-                      adipisicing elit. Facere officiis praesentium fugiat in
-                      temporibus cupiditate? Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Reprehenderit molestiae
-                      delectus ratione amet provident harum temporibus possimus
-                      quidem inventore esse! Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Debitis optio quae deserunt
-                      repudiandae quas esse reiciendis dolores voluptatibus,
-                      ullam maxime.
-                    </p>
+              <div class="col-lg-4">
+                <div
+                  class="coreHrMenu d-flex align-items-center hrMenuactive"
+                  onclick="location.href='addDeduction.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
+                  </div>
+                  <div class="coreHrMenuText">
+                    <p>Add Deductions</p>
+                    <small>Set up Start Add Deductions</small>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div>
-                    <p class="fs-15">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sapiente, eligendi debitis veniam sit cumque distinctio
-                      esse laboriosam nesciunt, ipsam aut fugit eos. Quis
-                      reprehenderit exercitationem nisi consectetur assumenda
-                      nulla esse voluptatum excepturi ratione. Asperiores,
-                      explicabo quia dolores consequatur, placeat illo quisquam
-                      maxime veritatis vel veniam architecto nobis quis eum sunt
-                      ratione doloremque molestiae nam nostrum magnam quos!
-                      Excepturi dolorum soluta sequi, repellat iste quam vel
-                      alias incidunt deserunt voluptas vero dolor iusto sed
-                      molestiae enim illum sint et doloremque debitis? Minima
-                      eum reiciendis ullam quas sequi doloremque nisi. Beatae
-                      rerum vel autem voluptatem, molestias animi assumenda
-                      ullam laboriosam. Suscipit, eum. Lorem, ipsum dolor sit
-                      amet consectetur adipisicing elit. Nihil exercitationem
-                      odit earum itaque id cupiditate dolorum repellendus ex
-                      esse assumenda atque corrupti dolore aspernatur
-                      consectetur, quam vel qui ducimus, nostrum aut blanditiis
-                      saepe facere numquam ipsam non? Assumenda quo quod impedit
-                      accusamus! Illo voluptas molestiae facere, hic labore non
-                      nisi cupiditate dolor expedita laudantium tempore eius
-                      fuga quibusdam, asperiores quasi doloribus! Amet ratione
-                      dignissimos repellat delectus mollitia velit aut
-                      repudiandae, nesciunt alias cum, vel enim. Magnam amet
-                      modi suscipit error repellendus ipsam dolores, officiis
-                      pariatur soluta omnis quisquam, dolorum voluptatum
-                      voluptates mollitia necessitatibus, ipsa quia deserunt
-                      officia ab fugiat nobis.
-                    </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="p-4">
+                  <div id="customerList">
+                    <div class="row g-4 mb-3">
+                      <div class="col-sm">
+                        <div class="d-flex justify-content-sm-end">
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn"
+                            onclick="toggle()"
+                          >
+                            <span id="showBtn">
+                              <i class="ri-add-line align-bottom me-1"></i> Add
+                              Deductions Excel File
+                            </span>
+                            <span
+                              id="hideBtn"
+                              style="display: none; align-items: center"
+                            >
+                              <i class="las la-minus align-bottom me-1"></i>Hide
+                              Deductions Excel File
+                            </span>
+                          </button>
+                          <button type="button" class="btn">
+                            Download Template <i class="las la-angle-down"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-0 card" id="contentDiv">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="card p-4">
+                            <div class="mb-4">
+                              <h2>Add System Policy</h2>
+                            </div>
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">Title</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Enter title"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">File</label>
+                                    <input type="file" class="form-control" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex justify-content-center">
+                                  <div>
+                                    <button
+                                      type="submit"
+                                      class="btn btn-danger px-5 mx-1"
+                                    >
+                                      Cancel
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button
+                                      type="submit"
+                                      class="btn btn-primary px-5 mx-1"
+                                    >
+                                      Submit
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card p-4">
+                  <div class="text-center my-3">
+                    <h2>Single Employee Deductions</h2>
+                  </div>
+                  <form action="">
+                    <div class="row">
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Organizations
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Organizaations"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose organizations</option>
+                            <option>Evocation It</option>
+                            <option>Invicta</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Employee
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Employee"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose Employee</option>
+                            <option>Arif Bipu</option>
+                            <option>Rifat Shompod</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Month
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Month"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Year
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Year"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose Year</option>
+                            <option>2020</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Amount Option
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Amount Option"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                            onchange="showDiv(this)"
+                          >
+                            <option value="">Choose Amount Option</option>
+                            <option value="1">Fixed</option>
+                            <option value="2">Percentage</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6" id="amount">
+                        <div class="">
+                          <label class="" for="groosSalary">Amount</label>
+                          <div class="input-group">
+                            <div class="input-group-text">BDT</div>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Amount BDT"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6" id="percentage">
+                        <div class="">
+                          <label class="" for="groosSalary">Amount</label>
+                          <div class="input-group">
+                            <div class="input-group-text">%</div>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Amount Percentage"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-12">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Reason
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Reason"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <textarea
+                            class="w-100 form-control"
+                            placeholder="Remarks"
+                            name=""
+                            id=""
+                            rows="7"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-lg-12 my-4">
+                        <button
+                          type="submit"
+                          class="btn btn-primary px-5 w-100"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                      <!--end col-->
+                    </div>
+                    <!--end row-->
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card p-4">
+                  <div class="text-center my-3">
+                    <h2>Organizational Deductions</h2>
+                  </div>
+                  <form action="">
+                    <div class="row">
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Organizations
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Organizaations"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose organizations</option>
+                            <option>Evocation It</option>
+                            <option>Invicta</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Month
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Month"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Year
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Year"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                          >
+                            <option value="">Choose Year</option>
+                            <option>2020</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Amount Option
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Amount Option"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <select
+                            id="organizationInput"
+                            placeholder="Choose Organizations"
+                            onchange="showDiv1(this)"
+                          >
+                            <option value="">Choose Amount Option</option>
+                            <option value="1">Fixed</option>
+                            <option value="2">Percentage</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6" id="amount1">
+                        <div class="">
+                          <label class="" for="groosSalary">Amount</label>
+                          <div class="input-group">
+                            <div class="input-group-text">BDT</div>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Amount BDT"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-6" id="percentage1">
+                        <div class="">
+                          <label class="" for="groosSalary">Amount</label>
+                          <div class="input-group">
+                            <div class="input-group-text">%</div>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Amount Percentage"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!--end col-->
+                      <div class="col-lg-12">
+                        <div class="mb-3">
+                          <label
+                            for="organizationInput"
+                            class="form-label d-flex align-items-center"
+                            >Reason
+                            <i
+                              class="las la-question-circle tooltip-icon mx-1"
+                              data-bs-toggle="tooltip"
+                              data-bs-placement="top"
+                              title="Reason"
+                              rel="tooltip"
+                            ></i>
+                          </label>
+                          <textarea
+                            class="w-100 form-control"
+                            placeholder="Remarks"
+                            name=""
+                            id=""
+                            rows="7"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-lg-12 my-4">
+                        <button
+                          type="submit"
+                          class="btn btn-primary px-5 w-100"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                      <!--end col-->
+                    </div>
+                    <!--end row-->
+                  </form>
                 </div>
               </div>
             </div>
@@ -1072,5 +1501,64 @@
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!-----------------Serch Filter CDN-------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"
+      integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css"
+      integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg="
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function () {
+        $("select").selectize({
+          sortField: "text",
+        });
+      });
+
+      $(function () {
+        $("[rel='tooltip']").tooltip();
+      });
+
+      function showDiv(select) {
+        if (select.value == 1) {
+          document.getElementById("amount").style.display = "block";
+          document.getElementById("percentage").style.display = "none";
+        } else if (select.value == 2) {
+          document.getElementById("amount").style.display = "none";
+          document.getElementById("percentage").style.display = "block";
+        }
+      }
+
+      function showDiv1(select) {
+        if (select.value == 1) {
+          document.getElementById("amount1").style.display = "block";
+          document.getElementById("percentage1").style.display = "none";
+        } else if (select.value == 2) {
+          document.getElementById("amount1").style.display = "none";
+          document.getElementById("percentage1").style.display = "block";
+        }
+      }
+
+      function toggle() {
+        var content = document.getElementById("contentDiv");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn").style.display = "block";
+          document.getElementById("hideBtn").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn").style.display = "flex";
+          document.getElementById("showBtn").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

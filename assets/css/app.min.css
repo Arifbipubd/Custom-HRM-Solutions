@@ -14517,7 +14517,6 @@ span.flatpickr-weekday {
 
 input:checked + .slider {
   background-color: var(--vz-accordion-button-active-color);
-
 }
 
 input:focus + .slider {
@@ -14537,4 +14536,17 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+#amount {
+  display: none;
+}
+#percentage {
+  display: none;
+}
+#amount1 {
+  display: none;
+}
+#percentage1 {
+  display: none;
 }

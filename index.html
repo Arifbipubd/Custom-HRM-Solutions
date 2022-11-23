@@ -826,10 +826,37 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="payrol.html">
+                <a
+                  class="nav-link menu-link"
+                  href="#payrollDropdown"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="payrollDropdown"
+                >
                   <i class="las la-coins"></i>
                   <span data-key="t-dashboards">Payroll</span>
                 </a>
+                <div class="collapse menu-dropdown" id="payrollDropdown">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="allPayroll.html" class="nav-link">
+                        All Payroll
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="allowance.html" class="nav-link"> Allowance </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="commission.html" class="nav-link">
+                        Commission
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="deduction.html" class="nav-link"> Deduction </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link menu-link" href="task.html">
@@ -852,36 +879,22 @@
                 <div class="collapse menu-dropdown" id="coreHrDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="organization.html"
-                        class="nav-link"
-                      >
-                       Organisation
+                      <a href="organization.html" class="nav-link">
+                        Organisation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="designation.html"
-                        class="nav-link"
-                      >
+                      <a href="designation.html" class="nav-link">
                         Designation
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="department.html"
-                        class="nav-link"
-                      >
+                      <a href="department.html" class="nav-link">
                         Department
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="function.html"
-                        class="nav-link"
-                      >
-                        Function
-                      </a>
+                      <a href="function.html" class="nav-link"> Function </a>
                     </li>
                   </ul>
                 </div>
@@ -893,36 +906,31 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#policyDropdown" data-bs-toggle="collapse"
+                <a
+                  class="nav-link menu-link"
+                  href="#policyDropdown"
+                  data-bs-toggle="collapse"
                   role="button"
                   aria-expanded="false"
-                  aria-controls="coreHrDropdown">
+                  aria-controls="coreHrDropdown"
+                >
                   <i class="las la-receipt"></i>
                   <span data-key="t-dashboards">Policy</span>
                 </a>
-                  <div class="collapse menu-dropdown" id="policyDropdown">
+                <div class="collapse menu-dropdown" id="policyDropdown">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a
-                        href="systemPolicy.html"
-                        class="nav-link"
-                      >
-                       System Policy
+                      <a href="systemPolicy.html" class="nav-link">
+                        System Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="organizationPolicy.html"
-                        class="nav-link"
-                      >
+                      <a href="organizationPolicy.html" class="nav-link">
                         organization Policy
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        href="announcement.html"
-                        class="nav-link"
-                      >
+                      <a href="announcement.html" class="nav-link">
                         Announcement
                       </a>
                     </li>

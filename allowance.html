@@ -919,104 +919,377 @@
       <!-- Start right Content here -->
       <!-- ============================================================== -->
       <div class="main-content">
-        <div class="page-content">`
+        <div class="page-content">
           <div class="container-fluid">
-            <div class="card p-5">
-              <div class="row justify-content-center align-items-center mb-4">
-                <div class="col-lg-9">
-                  <div class="mb-4">
-                    <h3>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Reprehenderit, repudiandae.
-                    </h3>
+            <div class="row mb-5">
+              <div class="col-lg-4">
+                <div
+                  class="coreHrMenu d-flex align-items-center hrMenuactive"
+                  onclick="location.href='allAllowance.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-certificate me-1 fs-20"></i>
-                          Evocation IT
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-calendar me-1 fs-20"></i> 10-20-2022
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                      <div>
-                        <h5 class="d-flex align-items-center">
-                          <i class="las la-calendar me-1 fs-20"></i> 10-22-2023
-                        </h5>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="d-flex justify-content-center">
-                    <button
-                      type="button"
-                      class="btn btn-outline-primary btn-label waves-effect waves-light"
-                    >
-                      <i
-                        class="las la-download label-icon align-middle fs-16 me-2"
-                      ></i>
-                      Download
-                    </button>
+                  <div class="coreHrMenuText">
+                    <p>All Allowances</p>
+                    <small>Set up All All Allowances</small>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12 mb-3">
-                  <div>
-                    <p class="fs-16">
-                      The Organisation Lorem, ipsum dolor sit amet consectetur
-                      adipisicing elit. Facere officiis praesentium fugiat in
-                      temporibus cupiditate? Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Reprehenderit molestiae
-                      delectus ratione amet provident harum temporibus possimus
-                      quidem inventore esse! Lorem ipsum dolor sit amet
-                      consectetur adipisicing elit. Debitis optio quae deserunt
-                      repudiandae quas esse reiciendis dolores voluptatibus,
-                      ullam maxime.
-                    </p>
+              <div class="col-lg-4">
+                <div
+                  class="coreHrMenu d-flex align-items-center"
+                  onclick="location.href='addAllowance.html'"
+                >
+                  <div
+                    class="coreHrMenuIcon p-2 me-3 d-flex justify-content-center align-items-center"
+                  >
+                    <i class="las la-stream"></i>
+                  </div>
+                  <div class="coreHrMenuText">
+                    <p>Add Allowance</p>
+                    <small>Set up Start Add Allowance</small>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div>
-                    <p class="fs-15">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sapiente, eligendi debitis veniam sit cumque distinctio
-                      esse laboriosam nesciunt, ipsam aut fugit eos. Quis
-                      reprehenderit exercitationem nisi consectetur assumenda
-                      nulla esse voluptatum excepturi ratione. Asperiores,
-                      explicabo quia dolores consequatur, placeat illo quisquam
-                      maxime veritatis vel veniam architecto nobis quis eum sunt
-                      ratione doloremque molestiae nam nostrum magnam quos!
-                      Excepturi dolorum soluta sequi, repellat iste quam vel
-                      alias incidunt deserunt voluptas vero dolor iusto sed
-                      molestiae enim illum sint et doloremque debitis? Minima
-                      eum reiciendis ullam quas sequi doloremque nisi. Beatae
-                      rerum vel autem voluptatem, molestias animi assumenda
-                      ullam laboriosam. Suscipit, eum. Lorem, ipsum dolor sit
-                      amet consectetur adipisicing elit. Nihil exercitationem
-                      odit earum itaque id cupiditate dolorum repellendus ex
-                      esse assumenda atque corrupti dolore aspernatur
-                      consectetur, quam vel qui ducimus, nostrum aut blanditiis
-                      saepe facere numquam ipsam non? Assumenda quo quod impedit
-                      accusamus! Illo voluptas molestiae facere, hic labore non
-                      nisi cupiditate dolor expedita laudantium tempore eius
-                      fuga quibusdam, asperiores quasi doloribus! Amet ratione
-                      dignissimos repellat delectus mollitia velit aut
-                      repudiandae, nesciunt alias cum, vel enim. Magnam amet
-                      modi suscipit error repellendus ipsam dolores, officiis
-                      pariatur soluta omnis quisquam, dolorum voluptatum
-                      voluptates mollitia necessitatibus, ipsa quia deserunt
-                      officia ab fugiat nobis.
-                    </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card p-4">
+                  <div id="customerList">
+                    <div class="row g-4 mb-3">
+                      <div class="col-sm">
+                        <div class="d-flex justify-content-sm-end">
+                          <button
+                            type="button"
+                            class="btn btn-success add-btn"
+                            onclick="toggle()"
+                          >
+                            <span id="showBtn">
+                              <i class="ri-add-line align-bottom me-1"></i> Add
+                              SystemPolicy
+                            </span>
+                            <span
+                              id="hideBtn"
+                              style="display: none; align-items: center"
+                            >
+                              <i class="las la-minus align-bottom me-1"></i>Hide
+                              SystemPolicy
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="" id="contentDiv">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="card p-4">
+                            <div class="mb-4">
+                              <h2>Add System Policy</h2>
+                            </div>
+                            <form action="">
+                              <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">Title</label>
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Enter title"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-lg-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">File</label>
+                                    <input type="file" class="form-control" />
+                                  </div>
+                                </div>
+                                <div class="col-lg-12">
+                                  <div class="card">
+                                    <div class="align-items-center d-flex">
+                                      <h4 class="mb-3">Description</h4>
+                                    </div>
+                                    <!-- end card header -->
+
+                                    <div class="">
+                                      <div class="ckeditor-classic"></div>
+                                    </div>
+                                    <!-- end card-body -->
+                                  </div>
+                                  <!-- end card -->
+                                </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="d-flex justify-content-center">
+                                  <div>
+                                    <button
+                                      type="submit"
+                                      class="btn btn-danger px-5 mx-1"
+                                    >
+                                      Cancel
+                                    </button>
+                                  </div>
+                                  <div>
+                                    <button
+                                      type="submit"
+                                      class="btn btn-primary px-5 mx-1"
+                                    >
+                                      Submit
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-auto">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="search-box ms-2">
+                            <input
+                              type="text"
+                              class="form-control search"
+                              placeholder="Search..."
+                            />
+                            <i class="ri-search-line search-icon"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="table-responsive table-card mt-3 mb-1 px-3">
+                      <table
+                        class="table align-middle table-nowrap"
+                        id="customerTable"
+                      >
+                        <thead class="table-light">
+                          <tr>
+                            <th class="sort" data-sort="organizations">
+                              Organization Name
+                            </th>
+                            <th class="sort" data-sort="Phone">Phone</th>
+                            <th class="sort" data-sort="email">
+                              Email Address
+                            </th>
+                            <th class="sort" data-sort="address">Address</th>
+                            <th class="sort" data-sort="reg-no">
+                              Registration No
+                            </th>
+                            <th class="sort float-end" data-sort="action">
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="list form-check-all">
+                          <tr>
+                            <td class="searchfield1">Evocation it</td>
+                            <td class="searchfield2">01887980841</td>
+                            <td class="searchfield3">bipu@gmail.com</td>
+                            <td class="searchfield4">Dhaka</td>
+                            <td class="searchfield5">Registration No</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="organization_name">Evocation it</td>
+                            <td class="phone">01887980841</td>
+                            <td class="email">bipu@gmail.com</td>
+                            <td class="address">Dhaka</td>
+                            <td class="status">Registration No</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="organization_name">Evocation it</td>
+                            <td class="phone">01887980841</td>
+                            <td class="email">bipu@gmail.com</td>
+                            <td class="address">Dhaka</td>
+                            <td class="status">Registration No</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="organization_name">Evocation it</td>
+                            <td class="phone">01887980841</td>
+                            <td class="email">bipu@gmail.com</td>
+                            <td class="address">Dhaka</td>
+                            <td class="status">Registration No</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="organization_name">Evocation it</td>
+                            <td class="phone">01887980841</td>
+                            <td class="email">bipu@gmail.com</td>
+                            <td class="address">Dhaka</td>
+                            <td class="status">Registration No</td>
+                            <td>
+                              <div class="dropdown float-end">
+                                <a
+                                  href="#"
+                                  role="button"
+                                  id="dropdownMenuLink"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <i class="ri-more-2-fill"></i>
+                                </a>
+
+                                <ul
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuLink"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">View</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="#">Delete</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="noresult" style="display: none">
+                        <div class="text-center">
+                          <lord-icon
+                            src="https://cdn.lordicon.com/msoeawqm.json"
+                            trigger="loop"
+                            colors="primary:#121331,secondary:#08a88a"
+                            style="width: 75px; height: 75px"
+                          >
+                          </lord-icon>
+                          <h5 class="mt-2">Sorry! No Result Found</h5>
+                          <p class="text-muted mb-0">
+                            We've searched more than 150+ Orders We did not find
+                            any orders for you search.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="pagination-wrap hstack gap-2">
+                        <a class="page-item pagination-prev disabled" href="#">
+                          Previous
+                        </a>
+                        <ul class="pagination listjs-pagination mb-0"></ul>
+                        <a class="page-item pagination-next" href="#"> Next </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1069,8 +1342,28 @@
 
     <!-- listjs init -->
     <script src="assets/js/pages/listjs.init.js"></script>
+    <!-- ckeditor -->
+    <script src="assets/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
+    <script src="assets/js/pages/form-editor.init.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js"></script>
+
+    <!---------------Jquery-------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      function toggle() {
+        var content = document.getElementById("contentDiv");
+        if (content.style.display == "block") {
+          content.style.display = "none";
+          document.getElementById("showBtn").style.display = "block";
+          document.getElementById("hideBtn").style.display = "none";
+        } else {
+          content.style.display = "block";
+          document.getElementById("hideBtn").style.display = "flex";
+          document.getElementById("showBtn").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
