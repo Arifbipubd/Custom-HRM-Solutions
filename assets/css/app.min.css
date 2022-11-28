@@ -196,6 +196,11 @@
   --vz-input-group-addon-bg: #2a2f34;
   --vz-input-check-border: #33393f;
 }
+
+.cursor{
+  cursor: pointer;
+}
+
 #page-topbar {
   position: fixed;
   top: 0;
