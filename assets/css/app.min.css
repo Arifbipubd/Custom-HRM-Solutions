@@ -197,7 +197,7 @@
   --vz-input-check-border: #33393f;
 }
 
-.cursor{
+.cursor {
   cursor: pointer;
 }
 
@@ -14554,4 +14554,12 @@ input:checked + .slider:before {
 }
 #percentage1 {
   display: none;
+}
+
+.quickAction:hover {
+  background-color: var(--vz-vertical-menu-item-hover-bg);
+  transition: 0.5s ease-in-out;
+}
+.quickAction:hover h5{
+  color: white;
 }
