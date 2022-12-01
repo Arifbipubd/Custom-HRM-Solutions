@@ -200,7 +200,9 @@
 .cursor {
   cursor: pointer;
 }
-
+.w-20{
+  width: 20%;
+}
 #page-topbar {
   position: fixed;
   top: 0;
