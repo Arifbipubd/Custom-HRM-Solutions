@@ -14571,8 +14571,8 @@ input:checked + .slider:before {
 
 /********************Dashboard***************************/
 .dashboardProfileImg {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 .dashboardProfileImg img {
@@ -14593,16 +14593,16 @@ input:checked + .slider:before {
   color: #0072b1;
 }
 
-.dashboardProfile{
+/* .dashboardProfile{
   height: 35vh;
 }
 .dashboardCalender{
   height: 35vh;
-}
+} */
 .dashboardAccordion{
-  height: 35vh;
+  max-height: 50vh;
   overflow-y: scroll;
-}
+}   
 #app {
     width:100%;
     height:100%;
